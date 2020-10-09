@@ -6,9 +6,47 @@
 }
 
 body {
-  background-color: #888;
+  background-color: rgb(236, 236, 236);
 }
 
+.header-text {
+  color: rgb(3, 77, 16);
+  font-family: serif;
+  width: 100vw;
+  height: auto;
+  font-size: 10vw;
+  text-align: center;
+  background-color: rgba(236, 25, 25, 0.911);
+}
+
+ul {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  background-color: rgba(255, 0, 0, 0.527);
+}
+
+a {
+  font-family: sans-serif;
+  color: rgb(3, 77, 16);
+  text-decoration: none;
+  font-size: 4vw;
+}
+
+.nummer {
+  text-align: center;
+  font-size: 7vw;
+  color: rgb(3, 77, 16);
+}
+
+.tider {
+  text-align: center;
+  font-size: 3.5vw;
+  color: rgb(3, 77, 16);
+  margin-top: -1.5vh;
+}
 /* tablet */
 @media (min-width: 600px) {
 }
