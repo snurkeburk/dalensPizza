@@ -19,7 +19,7 @@ body {
   background-color: rgba(236, 25, 25, 0.911);
 }
 
-ul {
+nav ul {
   margin-top: 3px;
   display: flex;
   flex-direction: row;
@@ -28,13 +28,15 @@ ul {
   background-color: rgba(255, 0, 0, 0.527);
 }
 
-a {
+nav ul li a {
   font-family: sans-serif;
   color: rgb(3, 77, 16);
   text-decoration: none;
   font-size: 4vw;
 }
-
+nav ul li ul li a {
+  display: none;
+}
 .nummer {
   text-align: center;
   font-size: 7vw;
