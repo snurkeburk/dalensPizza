@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(228, 225, 204);
 }
 
 
@@ -65,6 +65,7 @@ nav ul :hover ul{
   width: 4em;
   padding: 0.5em 1em;
   margin-right: -1.9em;
+
 }
 
 
@@ -86,7 +87,8 @@ nav ul :hover ul{
   margin-left: 100px;
 }
 
-
+/* ATT GÖRA: FIXA KARTA RESPONSIVENESS, LÄGG TILL INFO I RÄTT ORDNING SOM MAN BESTÄLLER, MENY -> NUMMER (KANSKE BYTA PLATS PÅ DOM)
+--> SEDAN KARTA FÖR ATT HITTA. SOM INSTRUKTIONER TYP.
 
 
 
