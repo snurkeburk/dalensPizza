@@ -9,46 +9,87 @@ body {
   background-color: rgb(236, 236, 236);
 }
 
+
+.logo {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4em;
+}
+
 .header-text {
+  padding: 0.2em 0em;
+  margin-bottom: -0.2em;
+  margin-top: -2.1em;
   color: rgb(3, 77, 16);
   font-family: serif;
-  width: 100vw;
-  height: auto;
-  font-size: 10vw;
+  width: 100%;
+  height: 2em;
+  font-size: 2.6;
   text-align: center;
-  background-color: rgba(236, 25, 25, 0.911);
+  background-color: rgba(33, 71, 33, 0.911);
 }
 
 nav ul {
-  margin-top: 3px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: nowrap;
-  background-color: rgba(255, 0, 0, 0.527);
+  background-color: rgba(58, 107, 73, 0.993);
+  height: 2.8em;
+ 
+}
+
+nav ul li {
+  list-style: none;
+  margin-top: 0.9em;
 }
 
 nav ul li a {
-  font-family: sans-serif;
-  color: rgb(3, 77, 16);
+  font-family: sans-serif bold;
+  color: rgb(238, 238, 238);
   text-decoration: none;
-  font-size: 4vw;
+  font-size: 1em;
+  text-transform: uppercase;
+  
 }
-nav ul li ul li a {
-  display: none;
+
+nav ul ul{
+  display: none;  
+  
 }
+
+nav ul :hover ul{
+  display: block;
+  height: 8em;
+  width: 4em;
+  padding: 0.5em 1em;
+  margin-right: -1.9em;
+}
+
+
 .nummer {
   text-align: center;
-  font-size: 7vw;
-  color: rgb(3, 77, 16);
+  font-size: 6vh;
+  color: rgb(6, 95, 6);
 }
 
 .tider {
   text-align: center;
-  font-size: 3.5vw;
-  color: rgb(3, 77, 16);
-  margin-top: -1.5vh;
+  font-size: 3vh;
+  color: rgba(255, 0, 0, 0.966);
+  margin-top: -1vh;
 }
+
+
+.karta {
+  margin-left: 100px;
+}
+
+
+
+
+
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 600px) {
 }
