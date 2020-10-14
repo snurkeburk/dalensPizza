@@ -9,9 +9,8 @@ body {
   background-color: rgb(228, 225, 204);
 }
 
-
 .logo {
- display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 4em;
@@ -37,7 +36,6 @@ nav ul {
   flex-wrap: nowrap;
   background-color: rgba(58, 107, 73, 0.993);
   height: 2.8em;
- 
 }
 
 nav ul li {
@@ -51,23 +49,19 @@ nav ul li a {
   text-decoration: none;
   font-size: 1em;
   text-transform: uppercase;
-  
 }
 
-nav ul ul{
-  display: none;  
-  
+nav ul ul {
+  display: none;
 }
 
-nav ul :hover ul{
+nav ul :hover ul {
   display: block;
   height: 8em;
   width: 4em;
   padding: 0.5em 1em;
   margin-right: -1.9em;
-
 }
-
 
 .nummer {
   text-align: center;
@@ -82,9 +76,34 @@ nav ul :hover ul{
   margin-top: -1vh;
 }
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.pizzaText {
+  font-family: serif;
+  text-align: center;
+  color: #fff;
+  grid-column: 2;
+  background-color: rgba(3, 77, 17, 0.685);
+}
+
+.pizzaMeny {
+  text-align: center;
+  font-size: 5vh;
+  grid-column: 2;
+  background-color: rgba(3, 77, 17, 0.685);
+}
 
 .karta {
-  margin-left: 100px;
+  margin-top: 10em;
+  margin-left: 2em;
+  height: 20em;
+  width: 20em;
 }
 
 /* ATT GÖRA: FIXA KARTA RESPONSIVENESS, LÄGG TILL INFO I RÄTT ORDNING SOM MAN BESTÄLLER, MENY -> NUMMER (KANSKE BYTA PLATS PÅ DOM)
