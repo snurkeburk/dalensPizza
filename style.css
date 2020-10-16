@@ -63,24 +63,10 @@ nav ul :hover ul {
   margin-right: -1.9em;
 }
 
-.nummer {
-  text-align: center;
-  font-size: 6vh;
-  color: rgb(6, 95, 6);
-}
-
-.tider {
-  text-align: center;
-  font-size: 3vh;
-  color: rgba(255, 0, 0, 0.966);
-  margin-top: -1vh;
-}
-
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -89,14 +75,46 @@ nav ul :hover ul {
   text-align: center;
   color: #fff;
   grid-column: 2;
+  background-color: rgba(36, 105, 49, 0.685);
+}
+
+.stegEtt {
+  display: block;
+  margin-left: -18em;
+  margin-right: auto;
+  width: 3em;
+  z-index: 1;
+}
+
+.pizzaMenyContainer {
+  grid-column: 2;
+  padding: 1.5em;
+
   background-color: rgba(3, 77, 17, 0.685);
 }
 
 .pizzaMeny {
-  text-align: center;
-  font-size: 5vh;
-  grid-column: 2;
-  background-color: rgba(3, 77, 17, 0.685);
+  width: 50%;
+  margin: auto;
+  font-size: 4vh;
+  font-family: serif;
+  font-weight: 550;
+  color: rgb(255, 255, 255);
+}
+
+.nummer {
+  float: left;
+  font-size: 1.8em;
+  padding: 0.2em;
+  grid-column: 1;
+  color: rgb(6, 95, 6);
+}
+
+.tider {
+  grid-column: 1;
+  padding: 0.2em;
+  font-size: 1em;
+  color: rgba(255, 0, 0, 0.966);
 }
 
 .karta {
@@ -104,6 +122,11 @@ nav ul :hover ul {
   margin-left: 2em;
   height: 20em;
   width: 20em;
+}
+
+.frame {
+  height: auto;
+  width: 1000px;
 }
 
 /* ATT GÖRA: FIXA KARTA RESPONSIVENESS, LÄGG TILL INFO I RÄTT ORDNING SOM MAN BESTÄLLER, MENY -> NUMMER (KANSKE BYTA PLATS PÅ DOM)
