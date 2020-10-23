@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(228, 225, 204);
+  
 }
 
 .logo {
@@ -16,17 +16,18 @@ body {
   width: 4em;
 }
 
+
 .header-text {
   padding: 0.2em 0em;
   margin-bottom: -0.2em;
   margin-top: -2.1em;
   color: rgb(3, 77, 16);
   font-family: serif;
-  width: 100%;
+  width: 200%;
   height: 2em;
   font-size: 2.6;
   text-align: center;
-  background-color: rgba(33, 71, 33, 0.911);
+
 }
 
 nav ul {
@@ -36,6 +37,7 @@ nav ul {
   flex-wrap: nowrap;
   background-color: rgba(58, 107, 73, 0.993);
   height: 2.8em;
+  
 }
 
 nav ul li {
@@ -65,68 +67,145 @@ nav ul :hover ul {
 
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 5em;
+  grid-template-columns: 2fr 2fr 0.6fr 1fr;
+  grid-template-rows: 1fr 1fr;
   height: 100%;
   width: 100%;
 }
 
-.pizzaText {
-  font-family: serif;
-  text-align: center;
-  color: #fff;
-  grid-column: 2;
-  background-color: rgba(36, 105, 49, 0.685);
+
+
+
+.pizzaMenyContainer {
+  grid-row: 4;
+  padding: 1.5em;
+  background-color: rgba(221, 221, 207, 0.685);
 }
 
 .stegEtt {
-  display: block;
-  margin-left: -18em;
-  margin-right: auto;
-  width: 3em;
-  z-index: 1;
-}
-
-.pizzaMenyContainer {
-  grid-column: 2;
-  padding: 1.5em;
-
-  background-color: rgba(3, 77, 17, 0.685);
-}
-
-.pizzaMeny {
+  margin-top: -15.1em;
   width: 50%;
+  height: auto;
+  grid-column: 1;
+  z-index: -2;
+}
+
+
+.pizzaTextEtt {
+  font-family: sans-serif bold;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  color: rgb(24, 24, 24);
+  background-color: rgba(130, 136, 128, 0.212);
+  grid-column: 3;
+  grid-row-start: 1;
+  padding: 0.7em;
+
+}
+
+.pizzaMenyEtt {
+  grid-column: 3;
+  padding: 2em;
   margin: auto;
-  font-size: 4vh;
+  font-size: 3vh;
   font-family: serif;
-  font-weight: 550;
-  color: rgb(255, 255, 255);
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+
+.pizzaTextTvå {
+  text-align: center;
+  font-family: sans-serif bold;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: rgb(24, 24, 24);
+  grid-column: 3;
+  font-weight: 100;
+  background-color: rgba(130, 136, 128, 0.212);
+  padding: 0.7em;
+}
+
+.pizzaMenyTvå {
+  grid-column: 3;
+  font-size: 3vh;
+  margin-left: 4em;
+  padding: 2em;
+  font-family: serif;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+
+
+.pizzaTextTre {
+  font-family: sans-serif bold;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(24, 24, 24);
+  grid-column: 3;
+  background-color: rgba(130, 136, 128, 0.212);
+  padding: 0.7em;
+  z-index: -1;
+}
+.pizzaTextFyra {
+  font-family: sans-serif bold;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(24, 24, 24);
+  grid-column: 3;
+  background-color: rgba(130, 136, 128, 0.212);
+  padding: 0.7em;
+  z-index: -1;
+}
+
+
+.tider {
+  margin-top: 4em;
+  grid-column: 3;
+  padding: 1em;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.966);
+}
+
+
+.tiderKlocka {
+  grid-column: 3;
+  margin-top: -1em;
+  margin-left: 1.3em;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.966);
 }
 
 .nummer {
-  float: left;
   font-size: 1.8em;
   padding: 0.2em;
-  grid-column: 1;
-  color: rgb(6, 95, 6);
-}
-
-.tider {
-  grid-column: 1;
-  padding: 0.2em;
-  font-size: 1em;
-  color: rgba(255, 0, 0, 0.966);
-}
-
-.karta {
-  margin-top: 10em;
+  grid-column: 3;
+  grid-row: 9;
   margin-left: 2em;
+  color: rgb(7, 7, 7);
+}
+.karta {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4em;
   height: 20em;
-  width: 20em;
+  width: 100%;
 }
 
 .frame {
+  margin-top: -200em;
   height: auto;
-  width: 1000px;
 }
 
 /* ATT GÖRA: FIXA KARTA RESPONSIVENESS, LÄGG TILL INFO I RÄTT ORDNING SOM MAN BESTÄLLER, MENY -> NUMMER (KANSKE BYTA PLATS PÅ DOM)
