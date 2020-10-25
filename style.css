@@ -6,7 +6,7 @@
 }
 
 body {
-  
+  background-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -23,26 +23,30 @@ body {
   margin-top: -2.1em;
   color: rgb(3, 77, 16);
   font-family: serif;
-  width: 200%;
+  width: 100%;
   height: 2em;
   font-size: 2.6;
   text-align: center;
+  background-color: rgb(30, 78, 18);
 
 }
+
+/* main nav */
+
 
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: nowrap;
-  background-color: rgba(58, 107, 73, 0.993);
+  background-color: rgba(197, 24, 24, 0.993);
   height: 2.8em;
   
 }
 
 nav ul li {
   list-style: none;
-  margin-top: 0.9em;
+  margin-top: 0.86em;
 }
 
 nav ul li a {
@@ -51,6 +55,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 1em;
   text-transform: uppercase;
+  
 }
 
 nav ul ul {
@@ -59,17 +64,35 @@ nav ul ul {
 
 nav ul :hover ul {
   display: block;
-  height: 8em;
+  height: 10em;
   width: 4em;
-  padding: 0.5em 1em;
-  margin-right: -1.9em;
+  padding:1em;
+  
+}
+
+/* pizza klasser */
+
+
+nav ul ul ul a {
+  display: none;
+  font-size: 0;
+}
+
+nav ul ul ul{
+  display: none;
+  margin-left: -7em;
+  margin-top: -8.95em;
+}
+nav ul ul :hover a{
+  display: block;
+  width: 7em; 
 }
 
 .gridContainer {
   display: grid;
   margin-top: 5em;
-  grid-template-columns: 2fr 2fr 0.6fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 01fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
   height: 100%;
   width: 100%;
 }
@@ -78,7 +101,7 @@ nav ul :hover ul {
 
 
 .pizzaMenyContainer {
-  grid-row: 4;
+  grid-row: 2;
   padding: 1.5em;
   background-color: rgba(221, 221, 207, 0.685);
 }
@@ -91,8 +114,7 @@ nav ul :hover ul {
   z-index: -2;
 }
 
-
-.pizzaTextEtt {
+.pizzaTextEtt{
   font-family: sans-serif bold;
   text-decoration: none;
   font-size: 1em;
@@ -107,15 +129,8 @@ nav ul :hover ul {
 
 }
 
-.pizzaMenyEtt {
-  grid-column: 3;
-  padding: 2em;
-  margin: auto;
-  font-size: 3vh;
-  font-family: serif;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-}
+
+
 
 .pizzaTextTvå {
   text-align: center;
@@ -128,17 +143,11 @@ nav ul :hover ul {
   font-weight: 100;
   background-color: rgba(130, 136, 128, 0.212);
   padding: 0.7em;
+  display: none;
+
 }
 
-.pizzaMenyTvå {
-  grid-column: 3;
-  font-size: 3vh;
-  margin-left: 4em;
-  padding: 2em;
-  font-family: serif;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-}
+
 
 
 .pizzaTextTre {
@@ -153,6 +162,8 @@ nav ul :hover ul {
   background-color: rgba(130, 136, 128, 0.212);
   padding: 0.7em;
   z-index: -1;
+  display: none;
+
 }
 .pizzaTextFyra {
   font-family: sans-serif bold;
@@ -166,57 +177,127 @@ nav ul :hover ul {
   background-color: rgba(130, 136, 128, 0.212);
   padding: 0.7em;
   z-index: -1;
+  display: none;
+
+}
+.pizzaMenyEtt {
+  grid-column: 3;
+  padding: 2em;
+  margin: auto;
+  font-size: 3vh;
+  font-family: serif;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+
+.pizzaMenyTvå {
+  grid-column: 3;
+  font-size: 3vh;
+  margin-left: 4em;
+  padding: 2em;
+  font-family: serif;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
 }
 
 
-.tider {
-  margin-top: 4em;
-  grid-column: 3;
-  padding: 1em;
+.imgOne{
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1;
+  grid-row: 1;
+  width: 25em;
+
+}
+.imgTwo{
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1;
+  grid-row: 2;
+  width: 25em;
+}
+
+.infoContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  grid-row: 1;
+  grid-column: 4;
+  background-color: rgba(63, 63, 62, 0.055);
+  
+}
+
+.öppettider {
+  margin-top: 2em;
+  font-weight: 500;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.966);
-}
 
-
-.tiderKlocka {
-  grid-column: 3;
-  margin-top: -1em;
-  margin-left: 1.3em;
+} 
+.tider {
+  margin-top: -3em;
   font-size: 1.5em;
   color: rgba(0, 0, 0, 0.966);
+  list-style: none;
+  font-weight: 200;
+}
+
+.nummerText {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 1.8em;
+  color: rgb(7, 7, 7);
+
 }
 
 .nummer {
+  margin-top: -2.5em;
+  font-family: Cambria, Cochin, serif;
   font-size: 1.8em;
-  padding: 0.2em;
-  grid-column: 3;
-  grid-row: 9;
-  margin-left: 2em;
   color: rgb(7, 7, 7);
+  font-weight: 200;
 }
 .karta {
   margin: auto;
   display: flex;
   justify-content: space-around;
-  margin-top: 4em;
-  height: 20em;
+  position: fixed;
+  bottom: 0;
+  height: 10em;
   width: 100%;
+  
 }
 
-.frame {
-  margin-top: -200em;
-  height: auto;
+.rating {
+  width: 7em;
+  grid-row: 2;
 }
 
-/* ATT GÖRA: FIXA KARTA RESPONSIVENESS, LÄGG TILL INFO I RÄTT ORDNING SOM MAN BESTÄLLER, MENY -> NUMMER (KANSKE BYTA PLATS PÅ DOM)
---> SEDAN KARTA FÖR ATT HITTA. SOM INSTRUKTIONER TYP.
+
 
 
 
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 600px) {
+  
 }
 
 /* laptop och desktop */
 @media (min-width: 980px) {
+  .imgOne{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4em;
+    flex-wrap: wrap;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .imgTwo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.4em;
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
