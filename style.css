@@ -91,7 +91,7 @@ nav ul ul :hover a{
 .gridContainer {
   display: grid;
   margin-top: 5em;
-  grid-template-columns: 0.5fr 0.5fr 01fr 0.3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: 100%;
   width: 100%;
@@ -205,37 +205,41 @@ nav ul ul :hover a{
   display: flex;
   flex-wrap: wrap;
   grid-column: 1;
-  grid-row: 1;
-  width: 25em;
+  grid-row: 2;
+  width: 15em;
+  padding: 1em;
+  margin: auto;
 
 }
 .imgTwo{
   display: flex;
   flex-wrap: wrap;
   grid-column: 1;
-  grid-row: 2;
-  width: 25em;
+  grid-row: 3;
+  width: 15em;
+  padding: 1em;
+  margin: auto;
 }
 
 .infoContainer{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   grid-row: 1;
-  grid-column: 4;
+  grid-column: 1;
   background-color: rgba(63, 63, 62, 0.055);
+  width: 20em;
+  text-align: center;
+  height: 20em;
   
 }
 
 .öppettider {
-  margin-top: 2em;
   font-weight: 500;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.966);
+  
+  
 
 } 
 .tider {
-  margin-top: -3em;
   font-size: 1.5em;
   color: rgba(0, 0, 0, 0.966);
   list-style: none;
@@ -245,16 +249,15 @@ nav ul ul :hover a{
 .nummerText {
   font-family: serif;
   font-weight: 500;
-  font-size: 1.8em;
-  color: rgb(7, 7, 7);
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.966);
 
 }
 
 .nummer {
-  margin-top: -2.5em;
   font-family: Cambria, Cochin, serif;
   font-size: 1.8em;
-  color: rgb(7, 7, 7);
+  color: rgba(0, 0, 0, 0.966);
   font-weight: 200;
 }
 .karta {
@@ -269,35 +272,134 @@ nav ul ul :hover a{
 }
 
 .rating {
-  width: 7em;
-  grid-row: 2;
+  width: 20%;
+  margin: auto;
+  grid-row: 4;
+  margin-bottom: 12em;
+
 }
 
+/* bilder html */
 
+.bilderHeader {
+  padding: 1em;
+  grid-row: 1;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.bilderContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  width: 100%;
+  height: auto;
+}
+
+.bilderPlaceholderOne {
+  grid-column: 2;
+  grid-row-start: 2;
+  width: 15em;
+  height: auto;
+}
+.bilderPlaceholderTwo {
+  grid-row: 3;
+  width: 15em;
+  height: auto;
+}
+
+.bilderPlaceholderThree {
+  grid-row: 4;
+  width: 15em;
+  height: auto;
+}
+
+.bilderPlaceholderFour {
+  grid-row: 5;
+  width: 15em;
+  height: auto;
+}
+
+.bilderPlaceholderFive {
+  grid-row: 6;
+  width: 15em;
+  height: auto;
+}
 
 
 
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 600px) {
   
+
 }
 
 /* laptop och desktop */
 @media (min-width: 980px) {
+  .infoContainer{
+    padding: 2em;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 4;
+    background-color: rgba(63, 63, 62, 0.055);
+    width: 15em;
+    height: 25em;
+    
+  }
+
+  .öppettider {
+    font-weight: 500;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.966);
+    
+    
+  
+  } 
+  .tider {
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.966);
+    list-style: none;
+    font-weight: 200;
+    padding: 0.5em;
+
+  }
+  
+  .nummerText {
+    font-family: serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: rgba(0, 0, 0, 0.966);
+    padding: 0.5em;
+  
+  }
+  
+  .nummer {
+    font-family: Cambria, Cochin, serif;
+    font-size: 1.8em;
+    color: rgba(0, 0, 0, 0.966);
+    font-weight: 200;
+  }
+  
+
   .imgOne{
     display: flex;
-    justify-content: space-between;
-    padding: 1.4em;
     flex-wrap: wrap;
     grid-column: 1;
     grid-row: 1;
+    width: 25em;
   }
   .imgTwo{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1.4em;
     grid-column: 2;
     grid-row: 1;
+    width: 25em;
   }
+
+  .rating{
+    position: fixed;
+    bottom: 0;
+    width: 5%;
+  }
+
 }
