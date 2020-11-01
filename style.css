@@ -27,72 +27,64 @@ body {
   height: 2em;
   font-size: 2.6;
   text-align: center;
-  background-color: rgb(30, 78, 18);
+  background-color: rgb(129, 187, 53);
 
 }
+.nav__show {
+  font-size: 3em;
+  margin-top: -0.05em;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  background-color:rgb(255, 255, 255);
+}
 
-/* main nav */
-
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  background-color: rgba(197, 24, 24, 0.993);
-  height: 2.8em;
-  
+nav ul{
+  float: left;
 }
 
 nav ul li {
+  float:left;
   list-style: none;
-  margin-top: 0.86em;
+  position: relative;
 }
 
 nav ul li a {
-  font-family: sans-serif bold;
-  color: rgb(238, 238, 238);
+  font-family:sans-serif;
+  color: #616060;
+  font-size: 2em;
+  display: block;
   text-decoration: none;
-  font-size: 1em;
-  text-transform: uppercase;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  margin-left: 0.2em;
+
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+  width: 9em;
   
 }
 
-nav ul ul {
-  display: none;
-}
-
-nav ul :hover ul {
+nav ul li:hover ul {
   display: block;
-  height: 10em;
-  width: 4em;
-  padding:1em;
-  
 }
 
-/* pizza klasser */
+nav ul li ul li a:hover{
+  color: #807e7e;
 
-
-nav ul ul ul a {
-  display: none;
-  font-size: 0;
-}
-
-nav ul ul ul{
-  display: none;
-  margin-left: -7em;
-  margin-top: -8.95em;
-}
-nav ul ul :hover a{
-  display: block;
-  width: 7em; 
 }
 
 .gridContainer {
+  margin-top: 1em;
   display: grid;
-  margin-top: 5em;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   height: 100%;
   width: 100%;
 }
@@ -227,7 +219,7 @@ nav ul ul :hover a{
   background-color: rgba(63, 63, 62, 0.055);
   width: 20em;
   text-align: center;
-  height: 20em;
+  height: 11em;
   
 }
 
@@ -264,7 +256,6 @@ nav ul ul :hover a{
   margin: auto;
   display: flex;
   justify-content: space-around;
-  position: fixed;
   bottom: 0;
   height: 10em;
   width: 100%;
@@ -330,76 +321,61 @@ nav ul ul :hover a{
 
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 600px) {
-  
+  .karta {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    height: 7em;
+    width: 100%;
+  }
 
+  .infoContainer{
+    grid-column: 2;
+  }
+
+  .imgOne{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: -1em;
+  }
+  .imgTwo{
+    grid-row: 2;
+  }
 }
 
 /* laptop och desktop */
 @media (min-width: 980px) {
+  .karta {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    height: 15em;
+    width: 100%;
+  }
+
   .infoContainer{
-    padding: 2em;
-    text-align: center;
-    grid-row: 1;
     grid-column: 4;
-    background-color: rgba(63, 63, 62, 0.055);
-    width: 15em;
     height: 25em;
-    
-  }
-
-  .öppettider {
-    font-weight: 500;
-    font-size: 2em;
-    color: rgba(0, 0, 0, 0.966);
-    
-    
-  
-  } 
-  .tider {
-    font-size: 1.5em;
-    color: rgba(0, 0, 0, 0.966);
-    list-style: none;
-    font-weight: 200;
-    padding: 0.5em;
+    padding: 1em;
 
   }
-  
-  .nummerText {
-    font-family: serif;
-    font-weight: 500;
-    font-size: 1.8em;
-    color: rgba(0, 0, 0, 0.966);
-    padding: 0.5em;
-  
-  }
-  
-  .nummer {
-    font-family: Cambria, Cochin, serif;
-    font-size: 1.8em;
-    color: rgba(0, 0, 0, 0.966);
-    font-weight: 200;
-  }
-  
 
   .imgOne{
-    display: flex;
-    flex-wrap: wrap;
     grid-column: 1;
     grid-row: 1;
+    margin-top: -1em;
     width: 25em;
   }
   .imgTwo{
-    display: flex;
-    flex-wrap: wrap;
-    grid-column: 2;
     grid-row: 1;
+    grid-column: 2;
+    margin-top: -1em;
     width: 25em;
-  }
 
-  .rating{
-    position: fixed;
-    bottom: 0;
-    width: 5%;
   }
-
+  
 }
