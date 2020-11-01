@@ -12,23 +12,45 @@
       
       <h1 class="header-text"></h1>
       <nav>
+        <!-- SMALL SCREEN NAVBAR-->
         <ul>
         <li><a class="nav__show" href="#">&#9776;</a>
           <ul>
-             <li><a href="index.html">Hem</a></li>
-             <li><a href="bilder.html">Bilder</a></li>
-             <li><a href="#">Hitta</a></li>
-             <li><a href="#">Om oss</a></li>
+             <li><a class="smaller__navbar" href="index.html">Hem</a></li>
+             <li><a class="smaller__navbar" href="bilder.html">Bilder</a></li>
+             <li><a class="smaller__navbar" href="#">Hitta</a></li>
+             <ul><li><a class="smaller__navbar__meny"  href="#">Menyer</a>
+              <ul><li><a href="#">Pizza</a></li>
+                <li><a href="#">Kebab</a></li>
+                <li><a href="#">Pasta</a></li>
+                <li><a href="#">Sallad</a></li>
+                
+                </ul>
+              </li>
           </ul>
+        </ul>
       </li>
+      </ul>
+      <!-- BIGGER SCREEN NAVBAR-->
+          <ul class="expanded__navbar">
+             <li><a class="expanded__navbar" href="index.html">Hem</a></li>
+             <li><a class="expanded__navbar" href="bilder.html">Bilder</a></li>
+             <li><a class="expanded__navbar" href="#">Hitta</a></li>
+             <li><a class="expanded__navbar" href="#">Menyer &#10136;</a>
+              <ul><li><a href="#">Pizza</a></li>
+              <li><a href="#">Kebab</a></li>
+              <li><a href="#">Pasta</a></li>
+              <li><a href="#">Sallad</a></li>
+              </ul>
+            </li>
       </ul>
       </nav>
     </header>   
 
     
     <div class="gridContainer">
-    <img class="imgOne" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" >
-    <img class="imgTwo" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" >
+    <img class="imgOne" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-am-i-always-hungry-1562015597.png" >
+    <img class="imgTwo" src="https://cdn.thinglink.me/api/image/513366585885327362/1240/10/scaletowidth" >
 
 
 
@@ -40,7 +62,7 @@
 
     <img class="rating" src ="https://www.nicepng.com/png/full/178-1782180_4-star-rating-5-stars-rating-no-background.png">
       
-      <!--<ul class="pizzaMenyEtt">
+      <ul class="pizzaMenyEtt">
         <li>Margherita</li>
         <li>Vesuvio</li>
         <li>Al Funghi</li>
@@ -79,7 +101,7 @@
             <li>Amore</li>
             <li>Vegetariana</li>
             <li>Quattro Stagioni</li>
-            </ul> -->
+            </ul>
           <div class="infoContainer">
           <h2 class="öppettider">Öppettider:</h2>
           <div class="tider">

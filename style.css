@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -12,36 +13,50 @@ body {
 .logo {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  width: 4em;
+  margin-right: 1em;
+  margin-top: 1em;
+  width: 5em;
 }
 
 
 .header-text {
-  padding: 0.2em 0em;
-  margin-bottom: -0.2em;
-  margin-top: -2.1em;
-  color: rgb(3, 77, 16);
+  padding: 1em 0em;
+  margin-bottom: -0em;
+  margin-top: -3em;
+  color: rgb(21, 104, 36);
+  border-color: rgb(202, 161, 71);
+  border-width: 0.2em;
+  border-style: outset;
+  border-radius: 4em;
   font-family: serif;
-  width: 100%;
-  height: 2em;
+  width: 96%;
+  height: 1em;
   font-size: 2.6;
   text-align: center;
-  background-color: rgb(129, 187, 53);
+  background-color: rgb(170, 60, 27);
 
 }
 .nav__show {
+  border-color: rgb(199, 144, 73);
+  border-width: 0.1em;
+  border-style: outset;
+  border-radius: 3em;
   font-size: 3em;
-  margin-top: -0.05em;
+  margin-top: -1.9em;
+  margin-left: 0.4em;
+  color: #fff;
 }
 nav {
   width: 100%;
   height: 60px;
   background-color:rgb(255, 255, 255);
+
+
 }
 
 nav ul{
   float: left;
+  
 }
 
 nav ul li {
@@ -57,7 +72,6 @@ nav ul li a {
   display: block;
   text-decoration: none;
   margin-top: 0.2em;
-  margin-bottom: 0.2em;
   margin-left: 0.2em;
 
 }
@@ -68,16 +82,44 @@ nav ul li ul {
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   width: 9em;
-  
+  margin-top: 0em;
+  border-color: rgb(199, 144, 73);
+  border-right-width: 0.2em;
+  border-left-width: 0em;
+  border-style: outset;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 0em;
 }
 
 nav ul li:hover ul {
   display: block;
+
 }
 
 nav ul li ul li a:hover{
-  color: #807e7e;
+  color: #da1919;
+  transition-duration: 0.7s;
 
+}
+
+nav ul ul ul{
+  display: block;
+  margin-top: 8em;
+  border-top-style: none;
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 0em;
+}
+
+nav ul ul ul ul li a{
+  display: none;
+  
+}
+nav ul ul ul ul {
+  margin-top: -0em;
+}
+nav ul ul ul:hover ul li a {
+  display: block;
 }
 
 .gridContainer {
@@ -89,12 +131,14 @@ nav ul li ul li a:hover{
   width: 100%;
 }
 
-
+.expanded__navbar{
+  display: none;
+}
 
 
 .pizzaMenyContainer {
-  grid-row: 2;
-  padding: 1.5em;
+  grid-row: 4;
+  grid-column: 4;
   background-color: rgba(221, 221, 207, 0.685);
 }
 
@@ -173,7 +217,8 @@ nav ul li ul li a:hover{
 
 }
 .pizzaMenyEtt {
-  grid-column: 3;
+  grid-column: 1;
+  grid-row: 4;
   padding: 2em;
   margin: auto;
   font-size: 3vh;
@@ -183,7 +228,7 @@ nav ul li ul li a:hover{
 }
 
 .pizzaMenyTvå {
-  grid-column: 3;
+  grid-column: 1;
   font-size: 3vh;
   margin-left: 4em;
   padding: 2em;
@@ -198,7 +243,7 @@ nav ul li ul li a:hover{
   flex-wrap: wrap;
   grid-column: 1;
   grid-row: 2;
-  width: 15em;
+  width: 18em;
   padding: 1em;
   margin: auto;
 
@@ -208,8 +253,7 @@ nav ul li ul li a:hover{
   flex-wrap: wrap;
   grid-column: 1;
   grid-row: 3;
-  width: 15em;
-  padding: 1em;
+  width: 18em;
   margin: auto;
 }
 
@@ -321,6 +365,13 @@ nav ul li ul li a:hover{
 
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 600px) {
+  .logo {
+    margin-right: 1.6em;
+  }
+
+  .header-text{
+    width: 98%;
+  }
   .karta {
     margin: auto;
     display: flex;
@@ -333,6 +384,8 @@ nav ul li ul li a:hover{
 
   .infoContainer{
     grid-column: 2;
+    margin-right: 1em;
+    height: 15em;
   }
 
   .imgOne{
@@ -342,11 +395,78 @@ nav ul li ul li a:hover{
   }
   .imgTwo{
     grid-row: 2;
+    grid-column: 1;
+    margin-top: -1em;
+  }
+
+  .rating {
+    grid-row: 2;
+    grid-column: 2;
+    width: 4em;
   }
 }
 
 /* laptop och desktop */
 @media (min-width: 980px) {
+  .logo {
+    display: block;
+    margin-left: 1em;
+    margin-right: auto;
+    margin-top: 1em;
+    width: 5em;
+  }
+  
+  
+  .header-text {
+    padding: 1em 0em;
+    margin-bottom: -0em;
+    margin-top: -3em;
+    color: rgb(21, 104, 36);
+    border-color: rgb(202, 161, 71);
+    border-width: 0.2em;
+    border-style: outset;
+    border-radius: 4em;
+    font-family: serif;
+    width: 100%;
+    height: 1em;
+    font-size: 2.6;
+    text-align: center;
+    background-color: rgb(170, 60, 27);
+  
+  }
+ 
+  .nav__show {
+    display: none;
+  }
+
+  .expanded__navbar {
+    color: rgb(235, 219, 177);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: -1.4em;
+  }
+
+  .expanded__navbar:hover{
+    color: #fafafa;
+    transition-duration: 0.5s;
+  }
+
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    border-radius: 0px 0px 4px 4px;
+    background-color: rgb(252, 252, 252);
+    width: 9em;
+    margin-top: 0em;
+    border-color: rgb(199, 144, 73);
+    border-right-width: 0.2em;
+    border-width: 0.2em;
+    border-style: outset;
+    border-radius: 0.1em;
+
+  }
+
   .karta {
     margin: auto;
     display: flex;
@@ -358,24 +478,45 @@ nav ul li ul li a:hover{
   }
 
   .infoContainer{
-    grid-column: 4;
+    grid-column: 3;
     height: 25em;
     padding: 1em;
-
+    margin-top: -1em;
+    margin-left: 5em;
   }
 
   .imgOne{
     grid-column: 1;
     grid-row: 1;
     margin-top: -1em;
-    width: 25em;
+    margin-right: 0.5em;
+    margin-left: 3em;
+    width: 33em;
+    border-color: rgb(221, 94, 43);
+    border-width: 0.3em;
+    border-style: outset;
+    padding: 0;
+
+
   }
   .imgTwo{
     grid-row: 1;
     grid-column: 2;
     margin-top: -1em;
-    width: 25em;
+    width: 34em;
+    border-color: rgb(221, 94, 43);
+    border-width: 0.3em;
+    border-style: outset;
+    margin-left: 1em;
 
   }
+
+  .rating {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 1em;
+    width: 7em;
+  }
+  
   
 }
