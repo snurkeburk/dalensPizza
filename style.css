@@ -142,86 +142,31 @@ nav ul ul ul:hover ul li a {
   background-color: rgba(221, 221, 207, 0.685);
 }
 
-.stegEtt {
-  margin-top: -15.1em;
-  width: 50%;
-  height: auto;
-  grid-column: 1;
-  z-index: -2;
-}
 
-.pizzaTextEtt{
+
+.meny__header{
   font-family: sans-serif bold;
   text-decoration: none;
-  font-size: 1em;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 100;
-  color: rgb(24, 24, 24);
-  background-color: rgba(130, 136, 128, 0.212);
-  grid-column: 3;
-  grid-row-start: 1;
-  padding: 0.7em;
-
-}
-
-
-
-
-.pizzaTextTvå {
-  text-align: center;
-  font-family: sans-serif bold;
-  text-decoration: none;
-  font-size: 1em;
-  text-transform: uppercase;
-  color: rgb(24, 24, 24);
-  grid-column: 3;
-  font-weight: 100;
-  background-color: rgba(130, 136, 128, 0.212);
-  padding: 0.7em;
-  display: none;
-
-}
-
-
-
-
-.pizzaTextTre {
-  font-family: sans-serif bold;
-  text-decoration: none;
-  font-size: 1em;
   text-transform: uppercase;
   font-weight: 100;
   text-align: center;
   color: rgb(24, 24, 24);
-  grid-column: 3;
-  background-color: rgba(130, 136, 128, 0.212);
-  padding: 0.7em;
-  z-index: -1;
-  display: none;
-
-}
-.pizzaTextFyra {
-  font-family: sans-serif bold;
-  text-decoration: none;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 100;
-  text-align: center;
-  color: rgb(24, 24, 24);
-  grid-column: 3;
-  background-color: rgba(130, 136, 128, 0.212);
-  padding: 0.7em;
-  z-index: -1;
-  display: none;
-
-}
-.pizzaMenyEtt {
+  background-color: bisque;
+  font-size: 2em;
   grid-column: 1;
   grid-row: 4;
-  padding: 2em;
-  margin: auto;
-  font-size: 3vh;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.pizzaMenyEtt {
+  grid-column: 1;
+  line-height: 2em;
+  font-family: sans-serif;
+  list-style: none;
+  grid-row: 4;
+  padding: 3em;
+  font-size: 1.2em;
   font-family: serif;
   font-weight: 300;
   color: rgb(0, 0, 0);
@@ -229,9 +174,13 @@ nav ul ul ul:hover ul li a {
 
 .pizzaMenyTvå {
   grid-column: 1;
-  font-size: 3vh;
-  margin-left: 4em;
-  padding: 2em;
+  margin-left: 6em;
+  line-height: 2em;
+  font-family: sans-serif;
+  list-style: none;
+  grid-row: 4;
+  padding: 3em;
+  font-size: 1.2em;
   font-family: serif;
   font-weight: 300;
   color: rgb(0, 0, 0);
@@ -246,6 +195,7 @@ nav ul ul ul:hover ul li a {
   width: 18em;
   padding: 1em;
   margin: auto;
+ 
 
 }
 .imgTwo{
@@ -255,6 +205,7 @@ nav ul ul ul:hover ul li a {
   grid-row: 3;
   width: 18em;
   margin: auto;
+
 }
 
 .infoContainer{
@@ -263,7 +214,7 @@ nav ul ul ul:hover ul li a {
   background-color: rgba(63, 63, 62, 0.055);
   width: 20em;
   text-align: center;
-  height: 11em;
+  height: 13em;
   
 }
 
@@ -309,9 +260,9 @@ nav ul ul ul:hover ul li a {
 .rating {
   width: 20%;
   margin: auto;
-  grid-row: 4;
-  margin-bottom: 12em;
-
+  grid-row: 1;
+  grid-column: 1;
+  margin-top: 11em;
 }
 
 /* bilder html */
@@ -385,7 +336,7 @@ nav ul ul ul:hover ul li a {
   .infoContainer{
     grid-column: 2;
     margin-right: 1em;
-    height: 15em;
+    height: 30em;
   }
 
   .imgOne{
@@ -396,13 +347,13 @@ nav ul ul ul:hover ul li a {
   .imgTwo{
     grid-row: 2;
     grid-column: 1;
-    margin-top: -1em;
+    margin-top: -15em;
   }
 
   .rating {
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 2;
-    width: 4em;
+    width: 6em;
   }
 }
 
@@ -412,24 +363,24 @@ nav ul ul ul:hover ul li a {
     display: block;
     margin-left: 1em;
     margin-right: auto;
-    margin-top: 1em;
-    width: 5em;
+    margin-top: 0.5em;
+    width: 4em;
   }
   
   
   .header-text {
     padding: 1em 0em;
     margin-bottom: -0em;
-    margin-top: -3em;
+    margin-top: -2.2em;
     color: rgb(21, 104, 36);
     border-color: rgb(202, 161, 71);
-    border-width: 0.2em;
+    border-width: 0.13em;
     border-style: outset;
-    border-radius: 4em;
+    border-radius: 2em;
     font-family: serif;
     width: 100%;
-    height: 1em;
-    font-size: 2.6;
+    height: 0.1em;
+    font-size: 1;
     text-align: center;
     background-color: rgb(170, 60, 27);
   
@@ -444,7 +395,7 @@ nav ul ul ul:hover ul li a {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: -1.4em;
+    margin-top: -1.1em;
   }
 
   .expanded__navbar:hover{
@@ -492,7 +443,7 @@ nav ul ul ul:hover ul li a {
     margin-right: 0.5em;
     margin-left: 3em;
     width: 33em;
-    border-color: rgb(221, 94, 43);
+    border-color: rgb(0, 0, 0);
     border-width: 0.3em;
     border-style: outset;
     padding: 0;
@@ -503,8 +454,8 @@ nav ul ul ul:hover ul li a {
     grid-row: 1;
     grid-column: 2;
     margin-top: -1em;
-    width: 34em;
-    border-color: rgb(221, 94, 43);
+    width: 34.3em;
+    border-color: rgb(0, 0, 0);
     border-width: 0.3em;
     border-style: outset;
     margin-left: 1em;
