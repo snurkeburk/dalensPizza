@@ -136,15 +136,8 @@ nav ul ul ul:hover ul li a {
 }
 
 
-.pizzaMenyContainer {
-  grid-row: 4;
-  grid-column: 4;
-  background-color: rgba(221, 221, 207, 0.685);
-}
 
-
-
-.meny__header{
+.meny__header__pizza{
   font-family: sans-serif bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -211,8 +204,9 @@ nav ul ul ul:hover ul li a {
 .infoContainer{
   grid-row: 1;
   grid-column: 1;
-  background-color: rgba(63, 63, 62, 0.055);
-  width: 20em;
+  background-color: rgba(63, 63, 62, 0.103);
+  width: 18em;
+  margin-left: 1em;
   text-align: center;
   height: 13em;
   
@@ -338,7 +332,16 @@ nav ul ul ul:hover ul li a {
     margin-right: 1em;
     height: 30em;
   }
+  .meny__header__pizza {
+    grid-row: 2;
+  }
 
+  .pizzaMenyEtt {
+    grid-row: 2;
+  }
+  .pizzaMenyTvå {
+    grid-row: 2;
+  }
   .imgOne{
     grid-column: 1;
     grid-row: 1;
