@@ -85,23 +85,25 @@ nav ul li ul {
   background-color: rgba(255, 255, 255, 0.877);
   width: 9em;
   margin-top: 0em;
-  border-color: rgb(199, 144, 73);
+  border-color: rgb(8, 8, 7);
   border-right-width: 0.2em;
   border-left-width: 0em;
-  border-style: outset;
+  border-style: double;
   border-top-left-radius: 0em;
-  border-top-right-radius: 1em;
+  border-top-right-radius: 0em;
   border-bottom-right-radius: 0em;
 }
 
 nav ul li:hover ul {
   display: block;
+  z-index: 2;
 
 }
 
 nav ul li ul li a:hover{
-  color: #da1919;
+  color: #23c51e;
   transition-duration: 0.7s;
+
 
 }
 
@@ -127,7 +129,6 @@ nav ul ul ul:hover ul li a {
 .gridContainer {
   margin-top: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr;
   height: 100%;
   width: 100%;
@@ -138,106 +139,50 @@ nav ul ul ul:hover ul li a {
 }
 
 
-
-.meny__header__pizza__ett{
+.meny__header__pizza{
   font-family: sans-serif bold;
-  text-decoration: none;
+  text-decoration: underline overline;
   text-transform: uppercase;
   font-weight: 100;
   text-align: center;
   color: rgb(24, 24, 24);
-  font-size: 1.4em;
+  font-size: 1.1em;
   grid-column: 1;
   grid-row: 4;
   z-index: 1;
-  margin-top: 3.4em;
-}
-.meny__header__pizza__två {
- font-family: sans-serif bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 100;
-  text-align: center;
-  color: rgb(24, 24, 24);
-  font-size: 1.4em;
-  grid-column: 1;
-  grid-row: 6;
-  z-index: 1;
-  margin-top: 3.4em;
-
+  
 }
 
-.pizzaMenyEtt {
+
+#pizzaMenyEtt {
   border-style: double;
   grid-column: 1;
   line-height: 2em;
   font-family: sans-serif;
   list-style: none;
   grid-row:5;
-  padding: 2em;
+  padding: 0em;
   font-size: 1.2em;
   font-family: serif;
   font-weight: 300;
-  color: rgb(0, 0, 0);
-  background-color: bisque;
+  color: rgb(34, 34,34 );
+  background-color: rgba(255, 228, 196, 0.74);
   z-index: 0;
   text-align: center;
-  margin-left: 0.8em;
-  width: 10.75em;
-}
-
-.pizzaMenyTvå {
-  border-style: double;
-  margin-top: -2em;;
-  grid-column: 1;
-  line-height: 2em;
-  font-family: sans-serif;
-  list-style: none;
-  grid-row:6;
-  padding: 2em;
-  font-size: 1.2em;
-  font-family: serif;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-  background-color: bisque;
-  z-index: 0;
-  text-align: center;
-  margin-left: 0.8em;
-  width: 10.75em;
-  margin-top: 3.3em;
-}
-
-
-.imgOne{
-  display: flex;
-  flex-wrap: wrap;
-  grid-column: 1;
-  grid-row: 2;
-  width: 18em;
-  padding: 1em;
+  width: 80%;
   margin: auto;
- 
-
+  margin-top: 0.5em;
 }
-.imgTwo{
-  display: flex;
-  flex-wrap: wrap;
-  grid-column: 1;
-  grid-row: 3;
-  width: 18em;
-  margin: auto;
 
-}
 
 .infoContainer{
   grid-row: 1;
   grid-column: 1;
   background-color: rgba(247, 247, 247, 0.89);
-  width: 18em;
-  margin-left: 1em;
   text-align: center;
   height: 25em;
-  
+  width: 80%;
+  margin: auto;
 }
 
 .öppettider {
@@ -365,6 +310,15 @@ nav ul ul ul:hover ul li a {
 
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 600px) {
+  .gridContainer {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+  }
+
   .logo {
     margin-right: 1.6em;
   }
@@ -384,52 +338,28 @@ nav ul ul ul:hover ul li a {
 
   .infoContainer{
     grid-column: 4;
-    margin-right: 1em;
-    margin-left: -6em;
-    height: 30em;
+    margin-right: 0.5em;
+    height: 25em;
+    width: 18em;
+    margin-top: 0em;
   }
-  .meny__header__pizza__ett {
+  .meny__header__pizza {
     grid-row: 1;
     z-index: 1;
-    margin-top: -0em;
-    font-size: 1em;
-    width: 10em;
-    float: right;
-    margin-right: -2.5em;
+    font-size: 0.9em;
+    margin: auto;
+    width: 50%;
+
   }
-  .meny__header__pizza__två {
-    grid-row: 1;
-    grid-column: 2;
-    z-index: 1;
-    margin-top: -0em;
-    font-size: 1em;
-    width: 10em;
-    float: right;
-    margin-right: -2.5em;
-  }
+ 
 
 
-  .pizzaMenyEtt {
+  #pizzaMenyEtt {
     grid-row: 1;
     margin-top: 0em;
-    width: 5em;
+    width: 100%;
     z-index: 0;
-  }
-  .pizzaMenyTvå {
-    grid-row: 1;
-    grid-column: 2;
-    width: 5em;
-    margin-top: 0em;
-  }
-  .imgOne{
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: -1em;
-  }
-  .imgTwo{
-    grid-row: 2;
-    grid-column: 1;
-    margin-top: -15em;
+    margin-left: 0.5em;
   }
 
   .rating {
@@ -441,6 +371,15 @@ nav ul ul ul:hover ul li a {
 
 /* laptop och desktop */
 @media (min-width: 980px) {
+  .gridContainer {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+  }
+
   .logo {
     display: block;
     margin-left: 1em;
@@ -465,6 +404,7 @@ nav ul ul ul:hover ul li a {
     font-size: 1;
     text-align: center;
     background-color: rgb(170, 60, 27);
+
   
   }
  
@@ -478,6 +418,7 @@ nav ul ul ul:hover ul li a {
     justify-content: space-evenly;
     width: 100%;
     margin-top: -1.1em;
+    
   }
 
   .expanded__navbar:hover{
@@ -498,6 +439,7 @@ nav ul ul ul:hover ul li a {
     border-style: outset;
     border-radius: 0.1em;
 
+
   }
 
   .karta {
@@ -517,31 +459,6 @@ nav ul ul ul:hover ul li a {
     padding: 1em;
   }
 
-  .imgOne{
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: -1em;
-    margin-right: 0.5em;
-    margin-left: 3em;
-    width: 33em;
-    border-color: rgb(0, 0, 0);
-    border-width: 0.3em;
-    border-style: outset;
-    padding: 0;
-
-
-  }
-  .imgTwo{
-    grid-row: 1;
-    grid-column: 2;
-    margin-top: -1em;
-    width: 34.3em;
-    border-color: rgb(0, 0, 0);
-    border-width: 0.3em;
-    border-style: outset;
-    margin-left: 1em;
-
-  }
 
   .rating {
     grid-column: 1;
@@ -550,27 +467,18 @@ nav ul ul ul:hover ul li a {
     width: 7em;
   }
   
-  .meny__header__pizza__ett{
+  .meny__header__pizza{
     grid-row: 1;
-    float: center;
-    margin-right: 2em;
-
+    font-size: 1em;
+    margin: auto;
+    width: 50%;
   }
-  .meny__header__pizza__två {
-    grid-row: 1;
-    grid-column: 2;
-    float: center;
-    margin-right: 2.3em;
-  }
-  .pizzaMenyEtt{
+ 
+  #pizzaMenyEtt{
     grid-row: 1;
     grid-column: 1;
-    width: 15em;
+    width: 100%;
   }
-  .pizzaMenyTvå{
-    grid-row: 1;
-    grid-column: 2;
-    width: 15em;
-  }
+ 
   
 }
