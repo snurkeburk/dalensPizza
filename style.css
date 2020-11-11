@@ -115,7 +115,6 @@ nav ul ul ul {
   margin-top: 0em;
   border-top-right-radius: 0em;
   border-bottom-left-radius: 0em;
-  
 }
 
 nav ul ul ul ul li a {
@@ -149,17 +148,13 @@ nav ul ul ul:hover ul li a {
   text-align: center;
   color: rgb(24, 24, 24);
   font-size: 1.1em;
-  grid-column: 1;
-  grid-row: 4;
   z-index: 1;
 }
 
 #pizzaMenyEtt {
-  grid-column: 1;
   line-height: 2em;
   font-family: sans-serif;
   list-style: none;
-  grid-row: 5;
   padding: 0em;
   font-size: 1.2em;
   font-family: serif;
@@ -171,8 +166,6 @@ nav ul ul ul:hover ul li a {
   width: 80%;
   margin: auto;
   border-right-style: solid;
-
-
 }
 
 .meny__header__mexikan {
@@ -183,16 +176,12 @@ nav ul ul ul:hover ul li a {
   text-align: center;
   color: rgb(24, 24, 24);
   font-size: 1.1em;
-  grid-column: 1;
-  grid-row: 6;
   z-index: 1;
 }
 #mexikanMenyEtt {
-  grid-column: 1;
   line-height: 2em;
   font-family: sans-serif;
   list-style: none;
-  grid-row: 6;
   padding: 0em;
   font-size: 1.2em;
   font-family: serif;
@@ -215,16 +204,12 @@ nav ul ul ul:hover ul li a {
   text-align: center;
   color: rgb(24, 24, 24);
   font-size: 1.1em;
-  grid-column: 1;
-  grid-row: 7;
   z-index: 1;
 }
 #amerikanMenyEtt {
-  grid-column: 1;
   line-height: 2em;
   font-family: sans-serif;
   list-style: none;
-  grid-row: 7;
   padding: 0em;
   font-size: 1.2em;
   font-family: serif;
@@ -237,7 +222,6 @@ nav ul ul ul:hover ul li a {
   margin: auto;
   margin-top: 0em;
   border-right-style: solid;
-  
 }
 
 .infoContainer {
@@ -250,7 +234,6 @@ nav ul ul ul:hover ul li a {
   margin: auto;
   border-right-style: solid;
   margin-bottom: 2em;
-
 }
 
 .öppettider {
@@ -324,52 +307,28 @@ nav ul ul ul:hover ul li a {
   margin-top: 23.5em;
 }
 
-
 /* bilder html */
 
 .bilderHeader {
-  padding: 1em;
-  grid-row: 1;
+  padding: none;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(243, 243, 243);
+  font-size: 9em;
 }
 
-.bilderContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+.bajs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  height: auto;
 }
 
-.bilderPlaceholderOne {
-  grid-column: 2;
-  grid-row-start: 2;
-  width: 15em;
-  height: auto;
-}
-.bilderPlaceholderTwo {
-  grid-row: 3;
-  width: 15em;
-  height: auto;
-}
-
-.bilderPlaceholderThree {
-  grid-row: 4;
-  width: 15em;
-  height: auto;
-}
-
-.bilderPlaceholderFour {
-  grid-row: 5;
-  width: 15em;
-  height: auto;
-}
-
-.bilderPlaceholderFive {
-  grid-row: 6;
-  width: 15em;
-  height: auto;
+.one {
+  width: 70em;
+  padding: 2em;
+  margin: auto;
 }
 
 /* tablet yeeeeeeeeeeet */
@@ -377,8 +336,8 @@ nav ul ul ul:hover ul li a {
   .gridContainer {
     margin-top: 1em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     height: 100%;
     width: 100%;
   }
@@ -398,33 +357,36 @@ nav ul ul ul:hover ul li a {
     bottom: 0;
     height: 7em;
     width: 100%;
+    z-index: 5;
   }
 
   .infoContainer {
     grid-column: 4;
-    margin-right: 0.5em;
+    margin-right: 1.5em;
     height: 25em;
-    width: 10em;
+    width: 15em;
     margin-top: 0em;
+    border-style: ridge;
+    border-color: #c5771e;
   }
- 
+
   .high__res__container {
     display: flex;
-    width: 97%;
+    width: 140%;
+    flex-wrap: wrap;
     justify-content: space-around;
     grid-column-start: 1;
-    grid-column-end: 4;
-    margin-left: 0.6em;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
-
-  
-
 
   .rating {
     grid-row: 1;
     grid-column: 4;
     width: 6em;
     z-index: 2;
+    margin: auto;
     margin-top: 23em;
   }
 }
@@ -435,7 +397,6 @@ nav ul ul ul:hover ul li a {
     margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
     height: 100%;
     width: 100%;
   }
@@ -514,7 +475,7 @@ nav ul ul ul:hover ul li a {
 
   .rating {
     grid-column: 4;
-    margin-left: 15.5em;
+    margin: auto;
     grid-row: 1;
     margin-top: 25em;
     width: 7em;
@@ -525,10 +486,9 @@ nav ul ul ul:hover ul li a {
     display: flex;
     width: 99%;
     justify-content: space-around;
+    flex-wrap: nowrap;
     grid-column-start: 1;
     grid-column-end: 4;
     margin-left: 0.6em;
   }
-
- 
 }
