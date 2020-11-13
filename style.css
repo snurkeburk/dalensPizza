@@ -8,7 +8,7 @@
 body,
 html {
   height: 100%;
-  background-color: #202323;
+  background-color: #4d634d;
   /*background-image: url("https://subwallpaper.com/Widescreen-Wallpapers/pepperoni-pizza-wallpapers-full-hd-For-Widescreen-Wallpaper.jpg");*/
 }
 
@@ -165,7 +165,8 @@ nav ul ul ul:hover ul li a {
   text-align: center;
   width: 80%;
   margin: auto;
-  border-right-style: solid;
+  border-style: double;
+  margin-bottom: 1em;
 }
 
 .meny__header__mexikan {
@@ -193,7 +194,9 @@ nav ul ul ul:hover ul li a {
   width: 80%;
   margin: auto;
   margin-top: 0em;
-  border-right-style: solid;
+  border-style: double;
+  margin-bottom: 1em;
+  height: 16%;
 }
 
 .meny__header__amerikan {
@@ -221,7 +224,37 @@ nav ul ul ul:hover ul li a {
   width: 80%;
   margin: auto;
   margin-top: 0em;
-  border-right-style: solid;
+  border-style: double;
+}
+.meny__header__sallad {
+  font-family: sans-serif bold;
+  text-decoration: underline overline;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(24, 24, 24);
+  font-size: 1.1em;
+  z-index: 1;
+}
+#salladMenyEtt {
+  grid-column: 4;
+  grid-row: 1;
+  margin-top: 0em;
+  line-height: 2em;
+  font-family: sans-serif;
+  list-style: none;
+  padding: 0em;
+  font-size: 1.2em;
+  font-family: serif;
+  font-weight: 300;
+  color: rgb(34, 34, 34);
+  background-color: rgba(255, 255, 255, 0.74);
+  z-index: 1;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-style: double;
+  margin-bottom: 1em;
 }
 
 .infoContainer {
@@ -230,6 +263,7 @@ nav ul ul ul:hover ul li a {
   background-color: rgba(247, 247, 247, 0.89);
   text-align: center;
   height: 25em;
+  padding: 1em;
   width: 80%;
   margin: auto;
   border-right-style: solid;
@@ -326,7 +360,7 @@ nav ul ul ul:hover ul li a {
 }
 
 .one {
-  width: 70em;
+  width: 30em;
   padding: 2em;
   margin: auto;
 }
@@ -387,7 +421,8 @@ nav ul ul ul:hover ul li a {
     width: 6em;
     z-index: 2;
     margin: auto;
-    margin-top: 23em;
+    margin-right: 7.3em;
+    margin-top: 25em;
   }
 }
 
@@ -397,6 +432,7 @@ nav ul ul ul:hover ul li a {
     margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
   }
@@ -448,8 +484,8 @@ nav ul ul ul:hover ul li a {
     position: absolute;
     border-radius: 0px 0px 4px 4px;
     background-color: rgba(252, 252, 252);
-    width: 9em;
-    margin-left: -0.7em;
+    width: 17em;
+    margin-left: -5em;
     transition-duration: 600ms;
     height: 12em;
   }
@@ -484,11 +520,11 @@ nav ul ul ul:hover ul li a {
 
   .high__res__container {
     display: flex;
-    width: 99%;
-    justify-content: space-around;
+    width: 120%;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-left: 0.6em;
+    margin-left: 1em;
   }
 }
