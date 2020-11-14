@@ -3,13 +3,23 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 body,
 html {
   height: 100%;
-  background-color: #4d634d;
-  /*background-image: url("https://subwallpaper.com/Widescreen-Wallpapers/pepperoni-pizza-wallpapers-full-hd-For-Widescreen-Wallpaper.jpg");*/
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 100%;
+  animation: breath 70s linear infinite;
+  background: url("https://images.pexels.com/photos/754194/pexels-photo-754194.jpeg?cs=srgb&dl=night-dark-pattern-754194.jpg&fm=jpg") center center repeat;
+}
+
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
 }
 
 .logo {
@@ -29,7 +39,7 @@ html {
   margin-bottom: -0em;
   margin-top: -3em;
   color: rgb(21, 104, 36);
-  border-color: rgb(202, 161, 71);
+  border-color: rgb(233, 189, 154);
   border-width: 0.2em;
   border-style: outset;
   border-radius: 4em;
@@ -76,6 +86,7 @@ nav ul li a {
   font-size: 2em;
   display: block;
   text-decoration: none;
+  line-height: 1.4em;
   margin-top: 0.2em;
   margin-left: 0.2em;
 }
@@ -89,13 +100,6 @@ nav ul li ul {
   height: 20em;
   margin-top: 0em;
   border-color: rgb(8, 8, 7);
-  border-right-width: 0.2em;
-  border-left-width: 0em;
-  border-style: none;
-  border-top-left-radius: 0em;
-  border-top-right-radius: 0em;
-  border-bottom-right-radius: 0em;
-  border-bottom-style: none;
 }
 nav ul li:hover ul {
   transition-duration: 600ms;
@@ -196,7 +200,6 @@ nav ul ul ul:hover ul li a {
   margin-top: 0em;
   border-style: double;
   margin-bottom: 1em;
-  height: 16%;
 }
 
 .meny__header__amerikan {
@@ -237,7 +240,7 @@ nav ul ul ul:hover ul li a {
   z-index: 1;
 }
 #salladMenyEtt {
-  grid-column: 4;
+  grid-column: 1;
   grid-row: 1;
   margin-top: 0em;
   line-height: 2em;
@@ -396,24 +399,17 @@ nav ul ul ul:hover ul li a {
 
   .infoContainer {
     grid-column: 4;
+    margin-left: -1em;
     margin-right: 1.5em;
+    padding: 0;
     height: 25em;
     width: 15em;
     margin-top: 0em;
     border-style: ridge;
-    border-color: #c5771e;
+    border-width: 0.5em;
+    border-color: rgb(82, 153, 49);
   }
 
-  .high__res__container {
-    display: flex;
-    width: 140%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
 
   .rating {
     grid-row: 1;
@@ -421,13 +417,46 @@ nav ul ul ul:hover ul li a {
     width: 6em;
     z-index: 2;
     margin: auto;
-    margin-right: 7.3em;
-    margin-top: 25em;
+    margin-right: 6em;
+    margin-top: 23.5em;
   }
+
+  .high__res__container1  {
+    width: 35vw;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: -0em;
+
+  }
+  .high__res__container2  {
+    width: 35vw;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: -2em;
+
+  }
+
+  .high__res__container3  {
+    width: 35vw;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: -2em;
+    margin-top: 54.5em;
+  }
+
+  .high__res__container4  {
+    width: 35vw;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: -2em;
+    margin-top: 20em;
+  }
+  
 }
 
 /* laptop och desktop */
 @media (min-width: 980px) {
+
   .gridContainer {
     margin-top: 1em;
     display: grid;
@@ -446,20 +475,11 @@ nav ul ul ul:hover ul li a {
   }
 
   .header-text {
-    padding: 1em 0em;
-    margin-bottom: -0em;
     margin-top: -2.2em;
-    color: rgb(21, 104, 36);
-    border-color: rgb(202, 161, 71);
     border-width: 0.13em;
-    border-style: outset;
-    border-radius: 2em;
-    font-family: serif;
     width: 100%;
     height: 0.1em;
     font-size: 1;
-    text-align: center;
-    background-color: rgb(170, 60, 27);
   }
 
   .nav__show {
@@ -483,11 +503,11 @@ nav ul ul ul:hover ul li a {
     display: none;
     position: absolute;
     border-radius: 0px 0px 4px 4px;
-    background-color: rgba(252, 252, 252);
+    background-color: rgb(253, 253, 253);
     width: 17em;
     margin-left: -5em;
     transition-duration: 600ms;
-    height: 12em;
+    height: 15em;
   }
 
   .karta {
@@ -513,18 +533,42 @@ nav ul ul ul:hover ul li a {
     grid-column: 4;
     margin: auto;
     grid-row: 1;
+    margin-right: 17em;
     margin-top: 25em;
     width: 7em;
-    z-index: 2;
+    z-index: 0;
   }
 
-  .high__res__container {
-    display: flex;
-    width: 120%;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    margin-left: 1em;
+  
+
+  .high__res__container1  {
+    width: 24vw;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 10em;
   }
+  .high__res__container2  {
+    width: 24vw;
+    grid-column: 3;
+    grid-row: 1;
+    
+  }
+
+  .high__res__container3  {
+    width: 24vw;
+    margin-top: 23em;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .high__res__container4  {
+    width: 24vw;
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: -1em;
+    margin-top: 0em;
+  }
+  
+
+
 }
