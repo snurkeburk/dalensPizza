@@ -58,7 +58,7 @@ html {
   height: 1em;
   font-size: 2.6;
   text-align: center;
-  background-color: rgba(170, 60, 27, 0.993);
+  background-color: rgba(170, 60, 27, 0.664);
 }
 .nav__show {
   border-color: rgb(199, 144, 73);
@@ -276,12 +276,15 @@ nav ul ul ul:hover ul li a {
   grid-column: 1;
   background-color: rgba(247, 247, 247, 0.89);
   text-align: center;
-  height: 25em;
+  height: 26em;
   padding: 1em;
   width: 80%;
   margin: auto;
-  border-right-style: solid;
+  margin-top: 1em;
   margin-bottom: 2em;
+  box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
+  rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
+  border: none;
 }
 
 .öppettider {
@@ -297,6 +300,8 @@ nav ul ul ul:hover ul li a {
 }
 
 .nummerText {
+  margin-top: 1em;
+  text-decoration: overline;
   font-family: serif;
   font-weight: 500;
   font-size: 2em;
@@ -363,17 +368,52 @@ nav ul ul ul:hover ul li a {
   z-index: 2;
 }
 
-/* bilder html */
+/* bilder css */
+
+
+
 
 .bilderHeader {
-  padding: none;
+  color: #e5d5a0;
+  background-color: rgba(126, 126, 126, 0.212);
+  letter-spacing: .1em;
+  padding: 0.5em;
+  font-size: 6em;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(243, 243, 243);
-  font-size: 9em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+  margin-bottom: 1em;
 }
 
-.bajs {
+.bilder__back {
+  position: absolute;
+  left: 8em;
+  margin-top: -3.1em;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+  font-size: 5em;
+  padding: 0;
+  color: #fdf8e7;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.bilder__back:hover{
+  color: #f1ead3;
+  margin-top: -3.15em;
+}
+
+.bilder__back__test {
+  position: absolute;
+  margin-left: 35.5em;
+  margin-top: -6.4em;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 0;
+  color: #fdf8e7;
+  text-shadow: 0 1px 0 #000;
+}
+
+.bilder__container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -381,11 +421,26 @@ nav ul ul ul:hover ul li a {
   width: 100%;
 }
 
+
 .one {
-  width: 30em;
-  padding: 2em;
+  width: 31em;
+  padding: 1em;
   margin: auto;
+  transition-timing-function: ease-in-out;
+  box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
 }
+
+.one:hover{
+  width: 31em;
+  transition-duration: 300ms;
+  cursor:pointer;
+}
+
+.one:active {
+  width: 45em;
+}
+
+
 
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 600px) {
@@ -421,12 +476,11 @@ nav ul ul ul:hover ul li a {
     margin-left: -1em;
     margin-right: 1.5em;
     padding: 0;
-    height: 25em;
     width: 15em;
-    margin-top: 0em;
-    border-style: ridge;
-    border-width: 0.5em;
-    border-color: rgb(240, 170, 20);
+    margin-top: 1em;
+    box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
+    rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
+    border: none;
   }
 
 
@@ -541,9 +595,9 @@ nav ul ul ul:hover ul li a {
   .infoContainer {
     grid-column: 4;
     background-color: rgba(243, 240, 237, 0.87);
-    height: 25em;
     width: 18em;
     padding: 1em;
+
   }
 
   .rating {
