@@ -123,6 +123,7 @@ nav ul li ul li a:hover {
   transition-duration: 0.7s;
 }
 
+
 nav ul ul ul {
   height: 0em;
   display: block;
@@ -271,6 +272,7 @@ nav ul ul ul:hover ul li a {
   margin-bottom: 1em;
 }
 
+
 .infoContainer {
   grid-row: 1;
   grid-column: 1;
@@ -285,6 +287,15 @@ nav ul ul ul:hover ul li a {
   box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
   rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
   border: none;
+}
+
+.birdlol{
+display: flex;
+justify-content: space-around;
+}
+.bird {
+  margin: -2em;
+  width: 15em;
 }
 
 .öppettider {
@@ -476,13 +487,26 @@ nav ul ul ul:hover ul li a {
     margin-left: -1em;
     margin-right: 1.5em;
     padding: 0;
-    width: 15em;
+    width: 13em;
+    height: 31em;
     margin-top: 1em;
     box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
     rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
     border: none;
+    z-index: 20;
   }
 
+  .birdlol {
+   display: block;
+   grid-column: 4;
+   grid-row: 1;
+   margin-top: 33em;
+   margin-left: 0em;
+  }
+
+  .bird {
+    width: 15em;
+  }
 
   .rating {
     grid-row: 1;
@@ -522,6 +546,8 @@ nav ul ul ul:hover ul li a {
     margin-left: -2em;
     margin-top: 20em;
   }
+ 
+
   
 }
 
@@ -597,8 +623,21 @@ nav ul ul ul:hover ul li a {
     background-color: rgba(243, 240, 237, 0.87);
     width: 18em;
     padding: 1em;
-
+    margin-left: 0em;
+    z-index: 1;
   }
+
+  .birdlol {
+    display: block;
+    grid-column: 4;
+    grid-row: 1;
+    margin-top: 36em;
+    margin-left: 3em;
+   }
+ 
+   .bird {
+     width: 18em;
+   }
 
   .rating {
     grid-column: 4;
@@ -620,6 +659,8 @@ nav ul ul ul:hover ul li a {
     width: 24vw;
     grid-column: 3;
     grid-row: 1;
+    margin-left: -1em;
+
     
   }
 
@@ -628,6 +669,7 @@ nav ul ul ul:hover ul li a {
     margin-top: 23em;
     grid-column: 3;
     grid-row: 1;
+    margin-left: -1em;
   }
 
   .high__res__container4  {
