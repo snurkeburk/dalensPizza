@@ -322,12 +322,34 @@ justify-content: space-around;
   color: rgba(0, 0, 0, 0.966);
 }
 
-.nummer {
+#nummer {
   font-family: Cambria, Cochin, serif;
   font-size: 1.8em;
   color: rgba(0, 0, 0, 0.966);
   font-weight: 200;
+  margin-left: 2em;
   margin-top: 0.3em;
+  background: none;
+  border: none;
+  width: 8em;
+}
+
+#nummer:hover{
+  cursor: default;
+}
+
+#timer{
+  color: #abd8aa;
+}
+
+
+#button {
+  float: left;
+  margin-right: 2em;
+  margin-top: -2.05em;
+  display: absolute;
+  width: 3em;
+  background-color: #e2dede;
 }
 
 .adress {
@@ -383,9 +405,6 @@ justify-content: space-around;
 }
 
 /* bilder css */
-
-
-
 
 .bilderHeader {
   background: -webkit-linear-gradient(left, rgb(0, 255, 0),rgb(255, 255, 255), rgb(250, 0, 0));

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Dalens Pizzeria</title>
   </head>
   <body>    
@@ -57,10 +58,13 @@
         <div class="tider">
           <li>Mån-Fre:  11-21</li>
           <li>Lör-Sön:  12-21</li>
-          
+          <p id="timer"></p>
+
         </div>
         <h2 class="nummerText">Ring och beställ:</h2>
-        <h2 class="nummer">&#9742; 08-39 22 09</h2>
+        <h2>&#9742;</h2>
+        <input type="text" value=" 08-39 22 09" id="nummer">
+        <button id="button" onclick="myFunction()">&#9986;</button> 
         <h2 class="adress">Adress:</h2>
         <a href="https://www.google.se/maps/place/Dalens+Pizzeria/@59.28858,18.1002695,17z/data=!3m1!4b1!4m5!3m4!1s0x465f78399ec05b13:0xcdb2ee9647123a9e!8m2!3d59.28858!4d18.1024582"
         class="adress__adress">Fyrskeppsvägen 23</a>
@@ -70,7 +74,6 @@
         <a href="https://www.hittamenyn.se/restaurang/dalens-pizzeria-2/?tab=reviews">
         <img href="#" class="rating" src ="https://www.nicepng.com/png/full/178-1782180_4-star-rating-5-stars-rating-no-background.png">
         </a>
-
       </div>  
       <div class="birdlol">
       <img class ="bird" src="dalenspizzalogo.png" alt="logo"> 
@@ -79,27 +82,27 @@
 
       <article class="high__res__container1" >
       <!--<h4 class="meny__header__kebab">Kebab meny</h4>-->
-      <ul id="pizzaMenyEtt">
-        <h4 class="meny__header__pizza">Pizza prisklass 1</h4>
-        <li>1. Margherita</li>
-        <li>2. Vesuvio</li>
-        <li>3. Al Funghi</li>
-        <li>4. Galini</li>
-        <li>5. Bolognese</li>
-        <li>6. Cacciatore</li>
-        <li>7. Al Tonno</li>
-        <li>8. Napolitana</li>
-        <li>9. Capricciosa</li>
-        <li>10. Bussola</li>
-        <li>11. Hawaii</li>
-        <li>12. Dell opera</li>
-        <li>13. Isabella</li>
-        <li>14. Marinara</li>
-        <li>15. Paradiso</li>
-        <li>16. Gamba</li>
-        <li>17. Gorgonzola</li>
-        <li>18. Viking</li>
-        <li>19. Pompeii</li>
+        <ul id="pizzaMenyEtt">
+          <h4 class="meny__header__pizza">Pizza prisklass 1</h4>
+            <li>1. Margherita</li>
+            <li>2. Vesuvio</li>
+            <li>3. Al Funghi</li>
+            <li>4. Galini</li>
+            <li>5. Bolognese</li>
+            <li>6. Cacciatore</li>
+            <li>7. Al Tonno</li>
+            <li>8. Napolitana</li>
+            <li>9. Capricciosa</li>
+            <li>10. Bussola</li>
+            <li>11. Hawaii</li>
+            <li>12. Dell opera</li>
+            <li>13. Isabella</li>
+            <li>14. Marinara</li>
+            <li>15. Paradiso</li>
+            <li>16. Gamba</li>
+            <li>17. Gorgonzola</li>
+            <li>18. Viking</li>
+            <li>19. Pompeii</li>
 
           <h4 class="meny__header__pizza">Pizza prisklass 2</h4>
             <li>20. Caruso</li>  
@@ -120,7 +123,7 @@
             <li>35. Quattro Stagioni</li>
 
             
-            <h4 class="meny__header__pizza">Pizza prisklass 3</h4>
+          <h4 class="meny__header__pizza">Pizza prisklass 3</h4>
             <li>36. Mamma Rosa</li>
             <li>37. Zola</li>
             <li>38. Frisörens</li>
@@ -136,10 +139,10 @@
             <li>48. Istanbul</li>
           </ul>
         </article>
-          <div class="high__res__container2" >
 
-          <ul id="mexikanMenyEtt">
-          <h4 class="meny__header__mexikan">Mexikanska Pizzor</h4>
+      <div class="high__res__container2" >
+        <ul id="mexikanMenyEtt">
+        <h4 class="meny__header__mexikan">Mexikanska Pizzor</h4>
           <li>63. Azteka</li>
           <li>64. Acapuico</li>
           <li>65. Mexicano</li>
@@ -148,10 +151,10 @@
           <li>68. Den Fule</li>
           </ul>
         </div>
-          <article class="high__res__container3" >
 
-          <ul id="amerikanMenyEtt">
-            <h4 class="meny__header__amerikan">Amerikanska pan pizzor</h4>
+      <article class="high__res__container3" >
+        <ul id="amerikanMenyEtt">
+          <h4 class="meny__header__amerikan">Amerikanska pan pizzor</h4>
             <li>1. Hunolulu</li>
             <li>2. San Francisco</li>
             <li>3. Texas</li>
@@ -164,25 +167,25 @@
             <li>10. Vulkano</li>
           </ul>
         </article>
-          <article class="high__res__container4" >
 
-          <ul id="salladMenyEtt">
-            <h4 class="meny__header__sallad">sallader</h4>
-              <li>1. Ost & skink sallad</li>
-              <li>2. Räksallad</li>
-              <li>3. Hawaii sallad</li>
-              <li>4. Kyckling sallad</li>  
-              <li>5. Krabbfish sallad</li>
-              <li>6. Kebab sallad</li>
-              <li>7. Grekisk sallad</li>
-              <li>8. Tonfisk sallad</li>
-              <li>9. Capricciosa</li>
-              <li>10. Västkust sallad</li>
-              <li>11. Avokado sallad</li>
-              <li>12. Mozzarella sallad</li>
-              <li>13. Pasta sallad</li>
-            </ul>
-          </article>  
+      <article class="high__res__container4" >
+        <ul id="salladMenyEtt">
+          <h4 class="meny__header__sallad">sallader</h4>
+            <li>1. Ost & skink sallad</li>
+            <li>2. Räksallad</li>
+            <li>3. Hawaii sallad</li>
+            <li>4. Kyckling sallad</li>  
+            <li>5. Krabbfish sallad</li>
+            <li>6. Kebab sallad</li>
+            <li>7. Grekisk sallad</li>
+            <li>8. Tonfisk sallad</li>
+            <li>9. Capricciosa</li>
+            <li>10. Västkust sallad</li>
+            <li>11. Avokado sallad</li>
+            <li>12. Mozzarella sallad</li>
+            <li>13. Pasta sallad</li>
+        </ul>
+      </article>  
     </div>
     
      <!--<img class="frame"
@@ -192,9 +195,7 @@
       <iframe title="karta" class="karta"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037.6572342000422!2d18.10026951607063!3d59.288579981644546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f78399ec05b13%3A0xcdb2ee9647123a9e!2sDalens%20Pizzeria!5e0!3m2!1ssv!2sse!4v1602514304280!5m2!1ssv!2sse"
         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-       
-
-  </div>
+    </div>
 
   </body>
 </html>
