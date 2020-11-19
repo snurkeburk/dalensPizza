@@ -21,8 +21,8 @@ var x = setInterval(function() {
     var seconds = Math.floor((t % (1000 * 60)) / 1000); 
     document.getElementById("timer").innerHTML = 
      hours + "h " + minutes + "m " + seconds + "s "; 
-        if (hours <= 0.5) { 
+        if (minutes <= 5) { 
             clearInterval(x); 
             document.getElementById("timer").innerHTML = "STÄNGT!"; 
-        }   
+        } 
     }, 1000); 

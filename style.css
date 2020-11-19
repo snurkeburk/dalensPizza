@@ -13,6 +13,8 @@ html {
   background: url("wallpaper.jpeg");
   background-color: rgb(0,1.4,0);
   background-repeat: no-repeat;
+  scroll-behavior: smooth; /*smoothing effect när man trycker på t.ex menyer*/
+                          
   /*
   background-repeat: repeat-y;
   width: 100%;
@@ -23,13 +25,12 @@ html {
 }
 
 
-@keyframes breath {
+@keyframes breath { /* behövs inte längre med nya bakgrunden men har kvar ifall att */
   /*  
   0%   { background-size: 100% auto; }
   50% { background-size: 140% auto; }
   100% { background-size: 100% auto; }
   */
-
 }
 
 .logo {
@@ -275,13 +276,77 @@ nav ul ul ul:hover ul li a {
   margin-bottom: 1em;
 }
 
+.meny__header__pasta {
+  font-family: sans-serif bold;
+  text-decoration: underline overline;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(24, 24, 24);
+  font-size: 1.1em;
+  z-index: 1;
+}
+#pastaMenyEtt {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 0em;
+  line-height: 2em;
+  font-family: sans-serif;
+  list-style: none;
+  padding: 0em;
+  font-size: 1.2em;
+  font-family: serif;
+  font-weight: 300;
+  color: rgb(34, 34, 34);
+  background-color: rgba(255, 255, 255, 0.74);
+  z-index: 1;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-style: double;
+  margin-bottom: 1em;
+}
+
+
+.meny__header__kebab {
+  font-family: sans-serif bold;
+  text-decoration: underline overline;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(24, 24, 24);
+  font-size: 1.1em;
+  z-index: 1;
+}
+#kebabMenyEtt {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 0em;
+  line-height: 2em;
+  font-family: sans-serif;
+  list-style: none;
+  padding: 0em;
+  font-size: 1.2em;
+  font-family: serif;
+  font-weight: 300;
+  color: rgb(34, 34, 34);
+  background-color: rgba(255, 255, 255, 0.74);
+  z-index: 1;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-style: double;
+  margin-bottom: 1em;
+}
+
+
 
 .infoContainer {
   grid-row: 1;
   grid-column: 1;
   background-color: rgba(247, 247, 247, 0.89);
   text-align: center;
-  height: 30em;
+  height: 31em;
   padding: 1em;
   width: 80%;
   margin: auto;
@@ -292,10 +357,15 @@ nav ul ul ul:hover ul li a {
   border: none;
 }
 
-.birdlol{
+.viktigInfo {
+  font-weight: 100;
+}
+
+.birdlol { /* Container för logan */
 display: flex;
 justify-content: space-around;
 }
+
 .bird {
   margin: -2em;
   width: 15em;
@@ -332,34 +402,38 @@ justify-content: space-around;
   background: none;
   border: none;
   width: 8em;
+  pointer-events: none; /* gör så att man inte kan redigera nummret */
+  cursor: default;
 }
 
 #nummer:hover{
   cursor: default;
 }
 
-#timer{
+#timer {
   color: #abd8aa;
 }
 
 
 #button {
   float: left;
-  margin-left: 5em;
+  margin-left: 2em;
+  margin: auto;
   margin-top: 1.1em;
   display: absolute;
   width: 3em;
   background-color: #e2dede;
+  cursor: pointer;
 }
 
-.adress {
+.adress { /* Detta är texten "Adress" */
   margin-top: 1em;
   font-family: Cambria, Cochin, serif;
   font-size: 1.8em;
   color: rgba(0, 0, 0, 0.966);
   font-weight: 200;
 }
-.adress__adress {
+.adress__adress /* Detta är själva adressen */{
   margin-top: 1em;
   font-family: Cambria, Cochin, serif;
   font-size: 1.8em;
@@ -394,6 +468,7 @@ justify-content: space-around;
   height: 10em;
   width: 100%;
   display: none;
+  z-index: 10;
 }
 
 .rating {
@@ -466,10 +541,10 @@ justify-content: space-around;
 .one:hover{
   width: 31em;
   transition-duration: 300ms;
-  cursor:pointer;
+  cursor:pointer; /* Ändrar muspekaren för att indikera att man kan trycka på bilden*/
 }
 
-.one:active {
+.one:active { /* Förstorar bilden om man håller in på den */
   width: 38em;
 }
 
@@ -501,7 +576,7 @@ justify-content: space-around;
     bottom: 0;
     height: 7em;
     width: 100%;
-    z-index: 5;
+    z-index: 30;
   }
 
   .infoContainer {
@@ -509,27 +584,42 @@ justify-content: space-around;
     margin-left: -1em;
     margin-right: 1.5em;
     padding: 0;
-    width: 13em;
-    height: 35em;
+    width: 30vw;
+    height: 38em;
     margin-top: 1em;
     box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
     rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
     border: none;
-    z-index: 20;
+    z-index: 1;
   }
 
   .birdlol {
    display: block;
    grid-column: 4;
    grid-row: 1;
-   margin-top: 33em;
-   margin-left: 0em;
+   margin-top: 34em;
+   margin-left: auto;
+   margin-right: auto;
   }
 
+  
   .bird {
     margin-top: 5em;
     width: 15em;
   }
+  
+    #nummer {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      margin-right: -0.5em;
+    }
+
+
+    #button{
+      margin-top: -2em;
+      margin-left: 0em;
+    }
 
   .rating {
     grid-row: 1;
@@ -538,6 +628,9 @@ justify-content: space-around;
     z-index: 2;
     margin: auto;
   }
+
+
+  /* --HIGH RESOLUTION CONTAINERS--(används för res > 600px då allt är en helt annan layout */
 
   .high__res__container1  {
     width: 35vw;
@@ -567,8 +660,25 @@ justify-content: space-around;
     grid-column: 2;
     grid-row: 1;
     margin-left: -2em;
-    margin-top: 20em;
+    margin-top: 19em;
   }
+
+  .high__res__container5  {
+    width: 35vw;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: -2em;
+    margin-top: -39.7em;
+  }
+
+  .high__res__container6  {
+    width: 35vw;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: -2em;
+    margin-top: -21.7em;
+  }
+
  
 
   
@@ -644,18 +754,25 @@ justify-content: space-around;
   .infoContainer {
     grid-column: 4;
     background-color: rgba(243, 240, 237, 0.87);
-    width: 18em;
+    width: 20vw;
     padding: 1em;
     margin-left: 0em;
     z-index: 1;
+    margin-left: 2em;
+    height: 33em;
+  }
+
+  .viktigInfo{
+    margin-top: 2em;
   }
 
   .birdlol {
     display: block;
     grid-column: 4;
     grid-row: 1;
-    margin-top: 36em;
-    margin-left: 3em;
+    margin-top: 31em;
+    margin-left: auto;
+    margin-right: auto;
    }
  
    .bird {
@@ -682,27 +799,40 @@ justify-content: space-around;
     width: 24vw;
     grid-column: 3;
     grid-row: 1;
-    margin-left: -1em;
-
-    
+    margin-left: -2em;
   }
 
   .high__res__container3  {
     width: 24vw;
-    margin-top: 23em;
+    margin-top: 20em;
     grid-column: 3;
     grid-row: 1;
-    margin-left: -1em;
+    margin-left: -2em;
   }
 
   .high__res__container4  {
-    width: 24vw;
+    width: 30vw;
     grid-column: 2;
     grid-row: 1;
     margin-right: -1em;
     margin-top: 0em;
   }
-  
+
+  .high__res__container5  {
+    width: 30vw;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 35em;
+    margin-right: -1em;
+  }
+
+  .high__res__container6  {
+    width: 24vw;
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: -2em;
+    margin-top: -84em;
+  }
 
 
 }
