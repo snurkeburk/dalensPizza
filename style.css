@@ -15,24 +15,7 @@ html {
   background-repeat: no-repeat;
   scroll-behavior: smooth; /*smoothing effect när man trycker på t.ex menyer*/
                           
-  /*
-  background-repeat: repeat-y;
-  width: 100%;
-  animation: breath 70s linear infinite;
-  background: url("https://images.pexels.com/photos/754194/pexels-photo-754194.jpeg?cs=srgb&dl=night-dark-pattern-754194.jpg&fm=jpg") center center repeat;
-  */
-
-}
-
-
-@keyframes breath { /* behövs inte längre med nya bakgrunden men har kvar ifall att */
-  /*  
-  0%   { background-size: 100% auto; }
-  50% { background-size: 140% auto; }
-  100% { background-size: 100% auto; }
-  */
-}
-
+ }
 .logo {
   display: block;
   margin-left: auto;
@@ -417,6 +400,10 @@ nav ul ul ul:hover ul li a {
   box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
   rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
   border: none;
+}
+
+.dagar {
+  list-style: none;
 }
 
 .viktigInfo {

@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ring och beställ och hämta din pizza inom endast 15 minuter!">
+    <meta name="theme-color" content="#fff">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
     <title>Dalens Pizzeria</title>
   </head>
   <body>    
     <header>
-      <img class="logo" src="https://lh3.googleusercontent.com/C4xUoquAQS6tdXXd9G3e-0dAmDOSyfsngWOA1l57cjk4Gno_i6UYU1cag18XdNtdkQPJlhkPk4kOWWFv=w768-h768-n-o-v1">
+      <img class="logo" src="https://lh3.googleusercontent.com/C4xUoquAQS6tdXXd9G3e-0dAmDOSyfsngWOA1l57cjk4Gno_i6UYU1cag18XdNtdkQPJlhkPk4kOWWFv=w768-h768-n-o-v1" alt="logo">
       
       <h1 class="header-text"></h1>
       <nav>
         <!-- SMALL SCREEN NAVBAR-->
         <ul>
         <li><a class="nav__show" href="#">&#9776;</a>
-          <ul>
+          <ul> <!-- försökte ta bort denn ul men hade inte tid -->
              <li><a class="smaller__navbar" href="index.html">Hem</a></li>
              <li><a class="smaller__navbar" href="bilder.html">Bilder</a></li>
              <li><a class="smaller__navbar" href="#">Hitta</a></li>
+          </ul>
              <ul><li><a class="smaller__navbar__meny"  href="#">Menyer</a>
                 <li><a href="#pizzaMenyEtt">Pizzor</a></li>
                 <li><a href="#">Kebab</a></li>
@@ -30,7 +33,6 @@
                 
               </li>
           </ul>
-        </ul>
       </li>
       </ul>
       <!-- BIGGER SCREEN NAVBAR-->
@@ -39,7 +41,8 @@
              <li><a class="expanded__navbar" href="bilder.html">Bilder</a></li>
              <li><a class="expanded__navbar" href="https://www.google.com/maps?ll=59.28858,18.102458&z=15&t=m&hl=sv&gl=SE&mapclient=embed&cid=14822171652834605726">Hitta</a></li>
              <li><a class="expanded__navbar" href="#">Menyer </a>
-              <ul><li><a href="#pizzaMenyEtt">Pizza</a></li>
+              <ul> <!-- försökte ta bort denn ul men hade inte tid -->
+                <li><a href="#pizzaMenyEtt">Pizza</a></li>
                 <li><a href="#kebabMenyEtt">Kebab</a></li>
                 <li><a href="#pastaMenyEtt">Pasta</a></li>
                 <li><a href="#salladMenyEtt">Sallad</a></li>
@@ -61,8 +64,10 @@
       <div class="infoContainer">
         <h3 class="öppettider">Öppettider:</h3>
         <div class="tider">
-          <li>Mån-Fre:  11-21</li>
-          <li>Lör-Sön:  12-21</li>
+          <ul>
+            <li class="dagar">Mån-Fre:  11-21</li>
+            <li class="dagar">Lör-Sön:  12-21</li>
+          </ul>
           <p id="timer"></p>
 
         </div>
@@ -77,7 +82,7 @@
         <h4 class="dagens__under">KL. 11.00 - 14.00</h4>
         <h5 class="dagens__under">Prisklass 1,2</h5>
         <a href="https://www.hittamenyn.se/restaurang/dalens-pizzeria-2/?tab=reviews">
-        <img href="#" class="rating" src ="https://www.nicepng.com/png/full/178-1782180_4-star-rating-5-stars-rating-no-background.png">
+        <img href="#" class="rating" src ="https://www.nicepng.com/png/full/178-1782180_4-star-rating-5-stars-rating-no-background.png" alt="4 star rating">
         </a>
         <h5 class="viktigInfo">*Om du har allergier som vi bör veta om eller om du har andra frågor så
                               kan du ringa till oss och fråga!
