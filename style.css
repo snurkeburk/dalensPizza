@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 body,
@@ -11,11 +10,10 @@ html {
   height: 100%;
   width: 100%;
   background: url("wallpaper.jpeg");
-  background-color: rgb(0,1.4,0);
+  background-color: rgb(0, 1.4, 0);
   background-repeat: no-repeat;
   scroll-behavior: smooth; /*smoothing effect när man trycker på t.ex menyer*/
-                          
- }
+}
 .logo {
   display: block;
   margin-left: auto;
@@ -108,7 +106,6 @@ nav ul li ul li a:hover {
   color: #23c51e;
   transition-duration: 0.7s;
 }
-
 
 nav ul ul ul {
   height: 0em;
@@ -289,7 +286,6 @@ nav ul ul ul:hover ul li a {
   margin-bottom: 1em;
 }
 
-
 .meny__header__kebab {
   font-family: sans-serif bold;
   text-decoration: underline overline;
@@ -383,9 +379,6 @@ nav ul ul ul:hover ul li a {
   margin-bottom: 1em;
 }
 
-
-
-
 .infoContainer {
   grid-row: 1;
   grid-column: 1;
@@ -397,8 +390,9 @@ nav ul ul ul:hover ul li a {
   margin: auto;
   margin-top: 1em;
   margin-bottom: 2em;
-  box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
-  rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
+  box-shadow: rgba(42, 179, 24, 0.788) 5px -5px, rgb(255, 255, 255) 10px -10px,
+    rgba(241, 7, 7, 0.767) 15px -15px, rgba(241, 7, 7, 0.767) -5px 5px,
+    rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
   border: none;
 }
 
@@ -410,9 +404,10 @@ nav ul ul ul:hover ul li a {
   font-weight: 100;
 }
 
-.birdlol { /* Container för logan */
-display: flex;
-justify-content: space-around;
+.birdlol {
+  /* Container för logan */
+  display: flex;
+  justify-content: space-around;
 }
 
 .bird {
@@ -455,14 +450,13 @@ justify-content: space-around;
   cursor: default;
 }
 
-#nummer:hover{
+#nummer:hover {
   cursor: default;
 }
 
 #timer {
   color: #abd8aa;
 }
-
 
 #button {
   float: center;
@@ -474,14 +468,15 @@ justify-content: space-around;
   cursor: pointer;
 }
 
-.adress { /* Detta är texten "Adress" */
+.adress {
+  /* Detta är texten "Adress" */
   margin-top: 1em;
   font-family: Cambria, Cochin, serif;
   font-size: 1.8em;
   color: rgba(0, 0, 0, 0.966);
   font-weight: 200;
 }
-.adress__adress /* Detta är själva adressen */{
+.adress__adress /* Detta är själva adressen */ {
   margin-top: 1em;
   font-family: Cambria, Cochin, serif;
   font-size: 1.8em;
@@ -545,7 +540,7 @@ justify-content: space-around;
   display: flex;
 }
 
-#cr{
+#cr {
   padding: 0.5em;
   text-align: center;
   color: #fff;
@@ -555,17 +550,27 @@ justify-content: space-around;
 /* bilder css */
 
 .bilderHeader {
-  background: -webkit-linear-gradient(left, rgb(0, 255, 0),rgb(255, 255, 255), rgb(250, 0, 0));
+  background: -webkit-linear-gradient(
+    left,
+    rgb(0, 255, 0),
+    rgb(255, 255, 255),
+    rgb(250, 0, 0)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 5em;
   text-align: center;
 }
 
 .bilder__back {
   display: flex;
-  background: -webkit-linear-gradient(left, rgba(0, 255, 0, 0.589),rgba(255, 255, 255, 0.651), rgba(250, 0, 0, 0.61));
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 255, 0, 0.589),
+    rgba(255, 255, 255, 0.651),
+    rgba(250, 0, 0, 0.61)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   justify-content: space-around;
@@ -579,7 +584,7 @@ justify-content: space-around;
   width: 18%;
 }
 
-.bilder__back:hover{
+.bilder__back:hover {
   color: #f1ead3;
 }
 
@@ -602,7 +607,6 @@ justify-content: space-around;
   margin-bottom: 5em;
 }
 
-
 .one {
   width: 25em;
   padding: 1em;
@@ -611,17 +615,16 @@ justify-content: space-around;
   box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
-.one:hover{
+.one:hover {
   width: 25em;
   transition-duration: 300ms;
-  cursor:pointer; /* Ändrar muspekaren för att indikera att man kan trycka på bilden*/
+  cursor: pointer; /* Ändrar muspekaren för att indikera att man kan trycka på bilden*/
 }
 
-.one:active { /* Förstorar bilden om man håller in på den */
+.one:active {
+  /* Förstorar bilden om man håller in på den */
   width: 25em;
 }
-
-
 
 /* tablet yeeeeeeeeeeet */
 @media (min-width: 738px) {
@@ -650,19 +653,20 @@ justify-content: space-around;
     width: 30vw;
     height: 38em;
     margin-top: 1em;
-    box-shadow: rgba(42, 179, 24, 0.788)5px -5px, rgb(255, 255, 255) 10px -10px, 
-    rgba(241, 7, 7, 0.767) 15px -15px,  rgba(241, 7, 7, 0.767) -5px 5px, rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
+    box-shadow: rgba(42, 179, 24, 0.788) 5px -5px, rgb(255, 255, 255) 10px -10px,
+      rgba(241, 7, 7, 0.767) 15px -15px, rgba(241, 7, 7, 0.767) -5px 5px,
+      rgb(255, 255, 255) -10px 10px, rgba(42, 179, 24, 0.788)-15px 15px;
     border: none;
     z-index: 1;
   }
 
   .birdlol {
-   display: block;
-   grid-column: 4;
-   grid-row: 1;
-   margin-top: 34em;
-   margin-left: auto;
-   margin-right: auto;
+    display: block;
+    grid-column: 4;
+    grid-row: 1;
+    margin-top: 34em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .karta {
@@ -671,25 +675,23 @@ justify-content: space-around;
     position: relative;
     height: 30em;
     width: 30vw;
-    z-index:1;
+    z-index: 1;
     float: right;
     margin-right: 1em;
     margin-top: -7em;
   }
 
-  
   .bird {
     margin-top: 5em;
     width: 15em;
   }
-  
-    #nummer {
-      width: 100%;
-      margin: auto;
-      text-align: center;
-      margin-right: -0.5em;
-    }
 
+  #nummer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-right: -0.5em;
+  }
 
   .rating {
     grid-row: 1;
@@ -701,15 +703,15 @@ justify-content: space-around;
   #footer {
     display: flex;
     justify-content: space-evenly;
-    position: relative; 
-    padding: 1em; 
-    bottom: 0; 
-    width: 98%; 
-    height: 40px; 
+    position: relative;
+    padding: 1em;
+    bottom: 0;
+    width: 98%;
+    height: 40px;
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: left;
-    background: rgba(236, 219, 208, 0.062); 
+    background: rgba(236, 219, 208, 0.062);
     z-index: 5;
     border-top-style: double;
     border-color: #6160603b;
@@ -718,23 +720,21 @@ justify-content: space-around;
   /* --HIGH RESOLUTION CONTAINERS--(används för res > 600px då allt är en helt annan layout */
 
   /*Standard pizzor*/
-  .high__res__container1  {
+  .high__res__container1 {
     width: 35vw;
     grid-column: 1;
     grid-row: 1;
     margin-left: -0em;
-
   }
   /*Mexikanska pizzor*/
-  .high__res__container2  {
+  .high__res__container2 {
     width: 35vw;
     grid-column: 2;
     grid-row: 1;
     margin-left: -2em;
-
   }
   /*Amerikanska pizzor*/
-  .high__res__container3  {
+  .high__res__container3 {
     width: 35vw;
     grid-column: 2;
     grid-row: 1;
@@ -742,7 +742,7 @@ justify-content: space-around;
     margin-top: 54.5em;
   }
   /*Sallader*/
-  .high__res__container4  {
+  .high__res__container4 {
     width: 35vw;
     grid-column: 2;
     grid-row: 1;
@@ -750,7 +750,7 @@ justify-content: space-around;
     margin-top: 19em;
   }
   /*Pasta rätter*/
-  .high__res__container5  {
+  .high__res__container5 {
     width: 35vw;
     grid-column: 2;
     grid-row: 2;
@@ -758,14 +758,14 @@ justify-content: space-around;
     margin-top: -72.3em;
   }
   /*Kebab rätter*/
-  .high__res__container6  {
+  .high__res__container6 {
     width: 35vw;
     grid-column: 2;
     grid-row: 2;
     margin-left: -2em;
     margin-top: -53.5em;
   }
-  .high__res__container7  {
+  .high__res__container7 {
     width: 35vw;
     grid-column: 2;
     grid-row: 2;
@@ -773,7 +773,7 @@ justify-content: space-around;
     margin-top: -30em;
   }
 
-  .high__res__container8  {
+  .high__res__container8 {
     width: 35vw;
     grid-column: 2;
     grid-row: 2;
@@ -783,24 +783,20 @@ justify-content: space-around;
 
   .one {
     width: 40em;
+  }
 
-  }
-  
-  .one:hover{
+  .one:hover {
     width: 40em;
-    
   }
-  
-  .one:active { /* Förstorar bilden om man håller in på den */
+
+  .one:active {
+    /* Förstorar bilden om man håller in på den */
     width: 50em;
   }
-
-  
 }
 
 /* laptop och desktop */
 @media (min-width: 1234px) {
-
   .gridContainer {
     margin-top: 1em;
     display: grid;
@@ -812,7 +808,7 @@ justify-content: space-around;
 
   #footer {
     width: 100%;
-    margin-left:-2em;
+    margin-left: -2em;
   }
 
   .logo {
@@ -859,8 +855,6 @@ justify-content: space-around;
     height: 20em;
   }
 
- 
-
   .infoContainer {
     grid-column: 4;
     background-color: rgba(243, 240, 237, 0.87);
@@ -871,7 +865,7 @@ justify-content: space-around;
     height: 33.5em;
   }
 
-  .viktigInfo{
+  .viktigInfo {
     margin-top: 2em;
   }
 
@@ -881,12 +875,12 @@ justify-content: space-around;
     grid-row: 1;
     margin-top: 31em;
     margin-left: auto;
-    margin-right:10em;
-   }
- 
-   .bird {
-     width: 18em;
-   }
+    margin-right: 8em;
+  }
+
+  .bird {
+    width: 18em;
+  }
 
   .rating {
     grid-column: 4;
@@ -898,18 +892,16 @@ justify-content: space-around;
 
   .one {
     width: 50em;
+  }
 
-  }
-  
-  .one:hover{
+  .one:hover {
     width: 50em;
-    
   }
-  
-  .one:active { /* Förstorar bilden om man håller in på den */
+
+  .one:active {
+    /* Förstorar bilden om man håller in på den */
     width: 60em;
   }
-
 
   .karta {
     display: flex;
@@ -917,27 +909,27 @@ justify-content: space-around;
     position: relative;
     height: 40em;
     width: 25vw;
-    z-index:1;
+    z-index: 1;
     float: right;
-    margin-right: 2em;
-    margin-top: -7em;
+    margin-right: 3em;
+    margin-top: 12em;
   }
-    /*Standard pizzor*/
-  .high__res__container1  {
+  /*Standard pizzor*/
+  .high__res__container1 {
     width: 24vw;
     grid-column: 1;
     grid-row: 1;
     margin-bottom: 0em;
   }
   /*Mexikanska pizzor*/
-  .high__res__container2  {
+  .high__res__container2 {
     width: 24vw;
     grid-column: 3;
     grid-row: 1;
     margin-left: -3em;
   }
   /*Amerikanska pizzor*/
-  .high__res__container3  {
+  .high__res__container3 {
     width: 24vw;
     margin-top: 20em;
     grid-column: 3;
@@ -945,7 +937,7 @@ justify-content: space-around;
     margin-left: -3em;
   }
   /*Sallader*/
-  .high__res__container4  {
+  .high__res__container4 {
     width: 30vw;
     grid-column: 2;
     grid-row: 1;
@@ -953,7 +945,7 @@ justify-content: space-around;
     margin-top: 0em;
   }
   /*Pasta rätter*/
-  .high__res__container5  {
+  .high__res__container5 {
     width: 30vw;
     grid-column: 2;
     grid-row: 1;
@@ -961,22 +953,22 @@ justify-content: space-around;
     margin-right: -1em;
   }
   /*Kebab rätter*/
-  .high__res__container6  {
+  .high__res__container6 {
     width: 24vw;
     grid-column: 3;
     grid-row: 2;
     margin-left: -3em;
-    margin-top: -110em;
+    margin-top: -108em;
   }
 
-  .high__res__container7  {
+  .high__res__container7 {
     width: 30vw;
     grid-column: 2;
     grid-row: 1;
     margin-top: 53.5em;
     margin-right: -1em;
   }
-  .high__res__container8  {
+  .high__res__container8 {
     width: 30vw;
     grid-column: 2;
     grid-row: 1;
